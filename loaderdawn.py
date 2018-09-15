@@ -12,6 +12,7 @@ import yadisk
 import requests
 import threading
 import linecache
+from utils.log import log
 from utils.VKAuth import *
 from vk_api.longpoll import VkLongPoll, VkEventType
 
@@ -22,16 +23,6 @@ with open("tokens") as f:
     token_list = f.read().split()
 
 
-def log(*args):
-    logfile = open(r"log.txt", "a")
-    print(time.ctime(), end = " ")
-    print(time.ctime(), file = logfile, end = " ")
-    for t in args:
-        print(str(t), end = " ")
-        print(str(t), file = logfile, end = " ")
-    print()
-    print(file = logfile)
-    logfile.close()
 
 def PrintException():
     exc_type, exc_obj, tb = sys.exc_info()
@@ -152,7 +143,7 @@ def get_yadisk_url(audio):
         "Content-Type" : "application/json",
         "Authorization" : c_disk["token"]
     }
-    max_try = 5
+    max_try = 10
 
     log("Choosen disk %s, token %s" % (c_disk["username"], ytoken))
     log("Working with", audio)
@@ -288,6 +279,7 @@ def process(user_id, message_id, message):
                     ]) + 
                 "\n=====================")
         log("Answered!\n\n")
+        log("Time -", end - time.time)
 
     # except BaseException:
         # vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")

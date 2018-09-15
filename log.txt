@@ -14253,3 +14253,423 @@ Sat Sep 15 20:16:06 2018 No playlist url found
 Sat Sep 15 20:16:07 2018 Answered!
 
  
+Sat Sep 15 22:38:10 2018 Getting new disk list... 
+Sat Sep 15 22:38:12 2018 Got 4 disks 
+Sat Sep 15 22:38:12 2018 Updating session... 
+Sat Sep 15 22:38:12 2018 Started! 
+Sat Sep 15 22:38:12 2018 Session updated! 
+Sat Sep 15 22:38:31 2018 New message: m_id = 2310 
+Sat Sep 15 22:38:32 2018 Read, typing 
+Sat Sep 15 22:38:32 2018 Message redirected, id = 2311 
+Sat Sep 15 22:38:32 2018 Audio link: {'id': 456239300, 'owner_id': 154941750, 'artist': 'David Arnold: & Michael Price', 'title': 'Who You Really Are', 'duration': 155, 'date': 1536777612, 'url': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'genre_id': 1001, 'is_hq': True} 
+Sat Sep 15 22:38:33 2018 https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg 
+Sat Sep 15 22:38:33 2018 Found 1 audios, starting sending 
+Sat Sep 15 22:38:33 2018 
+Sat Sep 15 22:38:33 2018 
+Sat Sep 15 22:38:33 2018 All size: 6459322 
+Sat Sep 15 22:38:33 2018 Start time 1537040313.0116608 
+Sat Sep 15 22:38:33 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 22:38:33 2018 Working with {'title': 'Who You Really Are', 'artist': 'David Arnold: & Michael Price', 'vkurl': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'url': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'size': 6459322} 
+Sat Sep 15 22:38:33 2018 Path, name disk:/!!!AUmxLIqKLgG5LH8/David Arnold: & Michael Price - Who You Really Are.mp3 David Arnold: & Michael Price - Who You Really Are.mp3 
+Sat Sep 15 22:38:33 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21AUmxLIqKLgG5LH8 
+Sat Sep 15 22:38:33 2018 Starting uploading... 
+Sat Sep 15 22:38:33 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/4f462830ecac7f1ec324e25315b27df5bd63f53dac416900df058df6dc299806 
+Sat Sep 15 22:38:36 2018 Got status success 
+Sat Sep 15 22:38:36 2018 Uploaded! 
+Sat Sep 15 22:38:36 2018 Getting link 
+Sat Sep 15 22:38:37 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21AUmxLIqKLgG5LH8%2FDavid+Arnold%3A+%26+Michael+Price+-+Who+You+Really+Are.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 22:38:37 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21AUmxLIqKLgG5LH8%2FDavid+Arnold%3A+%26+Michael+Price+-+Who+You+Really+Are.mp3 
+Sat Sep 15 22:38:37 2018 Got link https://yadi.sk/d/Pw6zb0KuRgrBEQ 
+Sat Sep 15 22:38:37 2018 
+Sat Sep 15 22:38:37 2018 Part is done, message sent 
+Sat Sep 15 22:38:37 2018 
+Sat Sep 15 22:38:37 2018 
+Sat Sep 15 22:38:37 2018 End time 1537040317.6393387 
+Sat Sep 15 22:38:37 2018 Audios succsedfully sent 
+Sat Sep 15 22:38:37 2018 Searching playlist url 
+Sat Sep 15 22:38:37 2018 No playlist url found 
+Sat Sep 15 22:38:38 2018 Answered!
+
+ 
+Sat Sep 15 22:39:11 2018 Getting new disk list... 
+Sat Sep 15 22:39:13 2018 Got 4 disks 
+Sat Sep 15 22:39:13 2018 Started! 
+Sat Sep 15 22:39:13 2018 Updating session... 
+Sat Sep 15 22:39:13 2018 Session updated! 
+Sat Sep 15 22:39:18 2018 Getting new disk list... 
+Sat Sep 15 22:39:21 2018 Got 4 disks 
+Sat Sep 15 22:39:21 2018 Updating session... 
+Sat Sep 15 22:39:21 2018 Started! 
+Sat Sep 15 22:39:21 2018 Session updated! 
+Sat Sep 15 22:39:32 2018 New message: m_id = 2315 
+Sat Sep 15 22:39:37 2018 Getting new disk list... 
+Sat Sep 15 22:39:38 2018 Got 4 disks 
+Sat Sep 15 22:39:38 2018 Started! 
+Sat Sep 15 22:39:38 2018 Updating session... 
+Sat Sep 15 22:39:39 2018 Session updated! 
+Sat Sep 15 22:39:39 2018 New message: m_id = 2316 
+Sat Sep 15 22:39:40 2018 Read, typing 
+Sat Sep 15 22:39:40 2018 Message redirected, id = 2317 
+Sat Sep 15 22:39:40 2018 Audio link: {'id': 456239300, 'owner_id': 154941750, 'artist': 'David Arnold: & Michael Price', 'title': 'Who You Really Are', 'duration': 155, 'date': 1536777612, 'url': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'genre_id': 1001, 'is_hq': True} 
+Sat Sep 15 22:39:40 2018 https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg 
+Sat Sep 15 22:39:40 2018 Found 1 audios, starting sending 
+Sat Sep 15 22:39:40 2018 
+Sat Sep 15 22:39:40 2018 
+Sat Sep 15 22:39:40 2018 All size: 6459322 
+Sat Sep 15 22:39:40 2018 Start time 1537040380.8690386 
+Sat Sep 15 22:39:41 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 22:39:41 2018 Working with {'title': 'Who You Really Are', 'artist': 'David Arnold: & Michael Price', 'vkurl': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'url': 'https://cs1-82v4.vkuseraudio.net/p7/e7bf6e280e1648.mp3?extra=O5YaUW3wsiqzeWse-e1gbb0Uti7oONJdhoTjbr8T_6C8h4-Eo7l6WDxTQz-zBYDCkEqjV1z1xgVggt3DcJDXem3OrIkwd5fXoHVUUDfBQqvPRhJrQa0-Q0YkUi7ZTaNtVaxxj5pxKhviW6dg', 'size': 6459322} 
+Sat Sep 15 22:39:41 2018 Path, name disk:/!!!R6qYY8pNqGy2PEy/David Arnold: & Michael Price - Who You Really Are.mp3 David Arnold: & Michael Price - Who You Really Are.mp3 
+Sat Sep 15 22:39:41 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R6qYY8pNqGy2PEy 
+Sat Sep 15 22:39:41 2018 Starting uploading... 
+Sat Sep 15 22:39:41 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/5502989780b33f0e5c732c987e085003db0203c2bbeb0f004db535e07f6e9ce4 
+Sat Sep 15 22:39:43 2018 Got status success 
+Sat Sep 15 22:39:44 2018 Uploaded! 
+Sat Sep 15 22:39:44 2018 Getting link 
+Sat Sep 15 22:39:44 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R6qYY8pNqGy2PEy%2FDavid+Arnold%3A+%26+Michael+Price+-+Who+You+Really+Are.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 22:39:44 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R6qYY8pNqGy2PEy%2FDavid+Arnold%3A+%26+Michael+Price+-+Who+You+Really+Are.mp3 
+Sat Sep 15 22:39:44 2018 Got link https://yadi.sk/d/EO93aTq0GQ2LsQ 
+Sat Sep 15 22:39:44 2018 
+Sat Sep 15 22:39:44 2018 Part is done, message sent 
+Sat Sep 15 22:39:44 2018 
+Sat Sep 15 22:39:44 2018 
+Sat Sep 15 22:39:44 2018 End time 1537040384.9515228 
+Sat Sep 15 22:39:44 2018 Audios succsedfully sent 
+Sat Sep 15 22:39:44 2018 Searching playlist url 
+Sat Sep 15 22:39:44 2018 No playlist url found 
+Sat Sep 15 22:39:45 2018 Answered!
+
+ 
+Sat Sep 15 22:46:40 2018 New message: m_id = 2321 
+Sat Sep 15 22:46:40 2018 Read, typing 
+Sat Sep 15 22:46:41 2018 Message redirected, id = 2322 
+Sat Sep 15 22:46:41 2018 Audio link: {'id': 456239111, 'owner_id': 154941750, 'artist': 'Сплин', 'title': 'Люди ночами делают новых людей..', 'duration': 220, 'date': 1496824734, 'url': '', 'lyrics_id': 430632959, 'genre_id': 1, 'no_search': 1, 'is_hq': True, 'content_restricted': 1} 
+Sat Sep 15 22:46:41 2018 Found 0 audios, starting sending 
+Sat Sep 15 22:46:41 2018 
+Sat Sep 15 22:46:41 2018 
+Sat Sep 15 22:46:41 2018 Audios succsedfully sent 
+Sat Sep 15 22:46:41 2018 Searching playlist url 
+Sat Sep 15 22:46:41 2018 No playlist url found 
+Sat Sep 15 22:46:41 2018 No audios, no playlist. Zachem pisal? Neyasno.  
+Sat Sep 15 22:46:41 2018 Answered!
+
+ 
+Sat Sep 15 23:53:01 2018 Getting new disk list... 
+Sat Sep 15 23:53:02 2018 Got 4 disks 
+Sat Sep 15 23:53:02 2018 Updating session... 
+Sat Sep 15 23:53:02 2018 Started! 
+Sat Sep 15 23:53:03 2018 Session updated! 
+Sat Sep 15 23:53:18 2018 New message: m_id = 2324 
+Sat Sep 15 23:53:18 2018 Read, typing 
+Sat Sep 15 23:53:19 2018 Message redirected, id = 2325 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239027, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Le blues de Fran&#231;oise', 'duration': 277, 'date': 1528491351, 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239028, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Si un jour', 'duration': 158, 'date': 1528491351, 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239029, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'La femme ressort', 'duration': 323, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239030, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'duration': 187, 'date': 1528491351, 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239031, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239032, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witch Dub (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239033, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Jaded Future - Future Las (Bonus Track) (Bonus Track)', 'duration': 254, 'date': 1528491351, 'url': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'is_hq': True} 
+Sat Sep 15 23:53:19 2018 https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE 
+Sat Sep 15 23:53:19 2018 Audio link: {'id': 456239034, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oceanside Seaside Resort (Bonus Track) (Bonus Track)', 'duration': 186, 'date': 1528491351, 'url': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239035, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Welcome America (Bonus Track) (Bonus Track)', 'duration': 148, 'date': 1528491351, 'url': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239036, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Paris 2012 (Bonus Track) (Bonus Track)', 'duration': 167, 'date': 1528491351, 'url': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239027, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Le blues de Fran&#231;oise', 'duration': 277, 'date': 1528491351, 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239028, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Si un jour', 'duration': 158, 'date': 1528491351, 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239029, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'La femme ressort', 'duration': 323, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239030, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'duration': 187, 'date': 1528491351, 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239031, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239032, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witch Dub (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239033, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Jaded Future - Future Las (Bonus Track) (Bonus Track)', 'duration': 254, 'date': 1528491351, 'url': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239034, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oceanside Seaside Resort (Bonus Track) (Bonus Track)', 'duration': 186, 'date': 1528491351, 'url': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239035, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Welcome America (Bonus Track) (Bonus Track)', 'duration': 148, 'date': 1528491351, 'url': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239036, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Paris 2012 (Bonus Track) (Bonus Track)', 'duration': 167, 'date': 1528491351, 'url': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239027, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Le blues de Fran&#231;oise', 'duration': 277, 'date': 1528491351, 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239028, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Si un jour', 'duration': 158, 'date': 1528491351, 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239029, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'La femme ressort', 'duration': 323, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239030, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'duration': 187, 'date': 1528491351, 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239031, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239032, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witch Dub (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239033, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Jaded Future - Future Las (Bonus Track) (Bonus Track)', 'duration': 254, 'date': 1528491351, 'url': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239034, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oceanside Seaside Resort (Bonus Track) (Bonus Track)', 'duration': 186, 'date': 1528491351, 'url': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239035, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Welcome America (Bonus Track) (Bonus Track)', 'duration': 148, 'date': 1528491351, 'url': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239036, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Paris 2012 (Bonus Track) (Bonus Track)', 'duration': 167, 'date': 1528491351, 'url': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239027, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Le blues de Fran&#231;oise', 'duration': 277, 'date': 1528491351, 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'is_hq': True} 
+Sat Sep 15 23:53:20 2018 https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc 
+Sat Sep 15 23:53:20 2018 Audio link: {'id': 456239028, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Si un jour', 'duration': 158, 'date': 1528491351, 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239029, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'La femme ressort', 'duration': 323, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239030, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'duration': 187, 'date': 1528491351, 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239031, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239032, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Witch Dub (Bonus Track) (Bonus Track)', 'duration': 229, 'date': 1528491351, 'url': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239033, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Jaded Future - Future Las (Bonus Track) (Bonus Track)', 'duration': 254, 'date': 1528491351, 'url': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239034, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Oceanside Seaside Resort (Bonus Track) (Bonus Track)', 'duration': 186, 'date': 1528491351, 'url': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239035, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Welcome America (Bonus Track) (Bonus Track)', 'duration': 148, 'date': 1528491351, 'url': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8 
+Sat Sep 15 23:53:21 2018 Audio link: {'id': 456239036, 'owner_id': -2000793014, 'artist': 'La Femme', 'title': 'Paris 2012 (Bonus Track) (Bonus Track)', 'duration': 167, 'date': 1528491351, 'url': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'is_hq': True} 
+Sat Sep 15 23:53:21 2018 https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I 
+Sat Sep 15 23:53:21 2018 Found 40 audios, starting sending 
+Sat Sep 15 23:53:21 2018 
+Sat Sep 15 23:53:21 2018 
+Sat Sep 15 23:53:21 2018 All size: 345896408 
+Sat Sep 15 23:53:21 2018 Start time 1537044801.329159 
+Sat Sep 15 23:53:21 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:53:21 2018 Working with {'title': 'Le blues de Fran&#231;oise', 'artist': 'La Femme', 'vkurl': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'size': 11103129} 
+Sat Sep 15 23:53:21 2018 Path, name disk:/!!!nuivQGZ_SES7pXw/La Femme - Le blues de Fran&#231;oise.mp3 La Femme - Le blues de Fran&#231;oise.mp3 
+Sat Sep 15 23:53:21 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21nuivQGZ_SES7pXw 
+Sat Sep 15 23:53:21 2018 Starting uploading... 
+Sat Sep 15 23:53:22 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/37ead5d364d4bf5c04e669430c51c581e6a6762f84a42757434f68c1386fd33c 
+Sat Sep 15 23:53:22 2018 Got status failed 
+Sat Sep 15 23:53:23 2018 !!Uploading error. Trying again. trys = 1 
+Sat Sep 15 23:53:23 2018 Starting uploading... 
+Sat Sep 15 23:53:23 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/45801902bfd15487edd0124885d2561fcbcc41bcba290f41d8a6f306591480cc 
+Sat Sep 15 23:53:26 2018 Got status success 
+Sat Sep 15 23:53:26 2018 Uploaded! 
+Sat Sep 15 23:53:26 2018 Getting link 
+Sat Sep 15 23:53:26 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21nuivQGZ_SES7pXw%2FLa+Femme+-+Le+blues+de+Fran%26%23231%3Boise.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:53:26 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21nuivQGZ_SES7pXw%2FLa+Femme+-+Le+blues+de+Fran%26%23231%3Boise.mp3 
+Sat Sep 15 23:53:26 2018 Got link https://yadi.sk/d/OkJispt0MxcFpw 
+Sat Sep 15 23:53:26 2018 
+Sat Sep 15 23:53:26 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 23:53:26 2018 Working with {'title': 'Si un jour', 'artist': 'La Femme', 'vkurl': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'size': 6339440} 
+Sat Sep 15 23:53:26 2018 Path, name disk:/!!!o2QUwIYo92m6KbI/La Femme - Si un jour.mp3 La Femme - Si un jour.mp3 
+Sat Sep 15 23:53:26 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21o2QUwIYo92m6KbI 
+Sat Sep 15 23:53:26 2018 Starting uploading... 
+Sat Sep 15 23:53:27 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/1c3f3264a375cdd0090a9db68fb82b1365387b9868a27dc7307718ab16b9e4b3 
+Sat Sep 15 23:53:28 2018 Got status success 
+Sat Sep 15 23:53:29 2018 Uploaded! 
+Sat Sep 15 23:53:29 2018 Getting link 
+Sat Sep 15 23:53:29 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21o2QUwIYo92m6KbI%2FLa+Femme+-+Si+un+jour.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:53:29 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21o2QUwIYo92m6KbI%2FLa+Femme+-+Si+un+jour.mp3 
+Sat Sep 15 23:53:29 2018 Got link https://yadi.sk/d/azV7bt4UL2qHCw 
+Sat Sep 15 23:53:29 2018 
+Sat Sep 15 23:53:29 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:53:29 2018 Working with {'title': 'La femme ressort', 'artist': 'La Femme', 'vkurl': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'size': 12922297} 
+Sat Sep 15 23:53:29 2018 Path, name disk:/!!!R3tZGGeS0roNTWB/La Femme - La femme ressort.mp3 La Femme - La femme ressort.mp3 
+Sat Sep 15 23:53:29 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R3tZGGeS0roNTWB 
+Sat Sep 15 23:53:29 2018 Starting uploading... 
+Sat Sep 15 23:53:30 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/5c5c434b6f1c0fb5eb46dc5d7909e55f558210b4a8daac8778f7b3bce7c5ff27 
+Sat Sep 15 23:53:33 2018 Got status success 
+Sat Sep 15 23:53:34 2018 Uploaded! 
+Sat Sep 15 23:53:34 2018 Getting link 
+Sat Sep 15 23:53:34 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R3tZGGeS0roNTWB%2FLa+Femme+-+La+femme+ressort.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:53:34 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21R3tZGGeS0roNTWB%2FLa+Femme+-+La+femme+ressort.mp3 
+Sat Sep 15 23:53:34 2018 Got link https://yadi.sk/d/nV6S-FmS6rL5rA 
+Sat Sep 15 23:53:34 2018 
+Sat Sep 15 23:53:34 2018 Choosen disk LoaderDawn4, token AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 
+Sat Sep 15 23:53:34 2018 Working with {'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'size': 7520174} 
+Sat Sep 15 23:53:34 2018 Path, name disk:/!!!kB_CyPqXsexdUkX/La Femme - Oh Baby Doll (Bonus Track) (Bonus Track).mp3 La Femme - Oh Baby Doll (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:53:34 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21kB_CyPqXsexdUkX 
+Sat Sep 15 23:53:34 2018 Starting uploading... 
+Sat Sep 15 23:53:36 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/716ce55663cdc58a511e48ea190407e5d37d65c0a3d72ae827ab4a5e47847de3 
+Sat Sep 15 23:53:45 2018 Got status success 
+Sat Sep 15 23:53:45 2018 Uploaded! 
+Sat Sep 15 23:53:45 2018 Getting link 
+Sat Sep 15 23:53:45 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21kB_CyPqXsexdUkX%2FLa+Femme+-+Oh+Baby+Doll+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:53:45 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21kB_CyPqXsexdUkX%2FLa+Femme+-+Oh+Baby+Doll+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:53:46 2018 Got link https://yadi.sk/d/17N2v_ADK5Ge_Q 
+Sat Sep 15 23:53:46 2018 
+Sat Sep 15 23:53:46 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:53:46 2018 Working with {'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'size': 9173203} 
+Sat Sep 15 23:53:46 2018 Path, name disk:/!!!_GnzaK7lL1dGgf7/La Femme - Witchcraft (Bonus Track) (Bonus Track).mp3 La Femme - Witchcraft (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:53:46 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21_GnzaK7lL1dGgf7 
+Sat Sep 15 23:53:46 2018 Starting uploading... 
+Sat Sep 15 23:53:46 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/02168a5951735f08bb3aad17f8d7834597e8ad797c66cf869b87cea13d5519b8 
+Sat Sep 15 23:53:47 2018 Got status failed 
+Sat Sep 15 23:53:47 2018 !!Uploading error. Trying again. trys = 1 
+Sat Sep 15 23:53:47 2018 Starting uploading... 
+Sat Sep 15 23:53:47 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/b0529400552eae8e45ea15257b382bda19f6e1d6ca12dfeece7e4e77385f7e3b 
+Sat Sep 15 23:53:51 2018 Got status failed 
+Sat Sep 15 23:53:51 2018 !!Uploading error. Trying again. trys = 2 
+Sat Sep 15 23:53:51 2018 Starting uploading... 
+Sat Sep 15 23:53:52 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/1d1e686417c3c362639d11072a53d938f0c2880943db522fc011a57284e7c550 
+Sat Sep 15 23:53:54 2018 Got status success 
+Sat Sep 15 23:53:54 2018 Uploaded! 
+Sat Sep 15 23:53:54 2018 Getting link 
+Sat Sep 15 23:53:55 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21_GnzaK7lL1dGgf7%2FLa+Femme+-+Witchcraft+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:53:55 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21_GnzaK7lL1dGgf7%2FLa+Femme+-+Witchcraft+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:53:56 2018 Got link https://yadi.sk/d/PwUHOnHZq6fEzg 
+Sat Sep 15 23:53:56 2018 
+Sat Sep 15 23:53:56 2018 Part is done, message sent 
+Sat Sep 15 23:53:56 2018 
+Sat Sep 15 23:53:56 2018 
+Sat Sep 15 23:53:56 2018 Choosen disk LoaderDawn3, token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Sat Sep 15 23:53:56 2018 Working with {'title': 'Witch Dub (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'url': 'https://cs1-65v4.vkuseraudio.net/p5/3b245d02c6baa1.mp3?extra=2EhjX23lzyc2Er7JXM_i6FmeqxgVs75qpCM6jaUxDvTesq9umbVq6DRo0qm4PJ4E7iAJLTy28NjLgIKw8IBr1VNRm5sKOp_Tkkrwt56z_1vb71mwvcoCteiKdAIXiuFH6m-QRhoBPTkS6boRVxY', 'size': 9173203} 
+Sat Sep 15 23:53:56 2018 Path, name disk:/!!!hWK9hpE29yBjeet/La Femme - Witch Dub (Bonus Track) (Bonus Track).mp3 La Femme - Witch Dub (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:53:56 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21hWK9hpE29yBjeet 
+Sat Sep 15 23:53:56 2018 Starting uploading... 
+Sat Sep 15 23:53:57 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/e886c8d2f69f8c5403c1c99b62aa26473548539e5d70caf0fb78740176cae85f 
+Sat Sep 15 23:54:01 2018 Got status success 
+Sat Sep 15 23:54:01 2018 Uploaded! 
+Sat Sep 15 23:54:01 2018 Getting link 
+Sat Sep 15 23:54:02 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21hWK9hpE29yBjeet%2FLa+Femme+-+Witch+Dub+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:02 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21hWK9hpE29yBjeet%2FLa+Femme+-+Witch+Dub+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:02 2018 Got link https://yadi.sk/d/CBDUv5IoU9oV1Q 
+Sat Sep 15 23:54:02 2018 
+Sat Sep 15 23:54:02 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 23:54:02 2018 Working with {'title': 'Jaded Future - Future Las (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'url': 'https://cs1-58v4.vkuseraudio.net/p15/91a7d66ba84c20.mp3?extra=mE2fqcqu-o0kCUfIT459pmaCwd_fbyIx5MVtjpVhZ9mD1sdWz-X-0Ji8cCzF_7hTs2QRP4uBHW4bqOQgVepU4tEs3D3UQ8UyZQR-QJRDFjl-CnwSrvOSDD1hzwczigfmtTYTxa2Cr0342Z60yHE', 'size': 10185709} 
+Sat Sep 15 23:54:02 2018 Path, name disk:/!!!P1yyHAhVGwkvVU4/La Femme - Jaded Future - Future Las (Bonus Track) (Bonus Track).mp3 La Femme - Jaded Future - Future Las (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:02 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21P1yyHAhVGwkvVU4 
+Sat Sep 15 23:54:02 2018 Starting uploading... 
+Sat Sep 15 23:54:02 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/db69b76d772d30bdc29963a0925b126c1e9ceb54765e2a1a0e016e18bd77a972 
+Sat Sep 15 23:54:03 2018 Got status failed 
+Sat Sep 15 23:54:03 2018 !!Uploading error. Trying again. trys = 1 
+Sat Sep 15 23:54:03 2018 Starting uploading... 
+Sat Sep 15 23:54:03 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/d47537bb404baffdf0a4d686f84e768a669cf733434fbae6f1815f1ebe7d0d00 
+Sat Sep 15 23:54:05 2018 Got status failed 
+Sat Sep 15 23:54:05 2018 !!Uploading error. Trying again. trys = 2 
+Sat Sep 15 23:54:05 2018 Starting uploading... 
+Sat Sep 15 23:54:05 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/d005cb9d8a8d8a3d5d77c17b1ba15da64314a52104384243006e078e08b8bd24 
+Sat Sep 15 23:54:07 2018 Got status success 
+Sat Sep 15 23:54:07 2018 Uploaded! 
+Sat Sep 15 23:54:07 2018 Getting link 
+Sat Sep 15 23:54:08 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21P1yyHAhVGwkvVU4%2FLa+Femme+-+Jaded+Future+-+Future+Las+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:08 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21P1yyHAhVGwkvVU4%2FLa+Femme+-+Jaded+Future+-+Future+Las+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:08 2018 Got link https://yadi.sk/d/pg1Hq_wqu2hVmg 
+Sat Sep 15 23:54:08 2018 
+Sat Sep 15 23:54:08 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:54:08 2018 Working with {'title': 'Oceanside Seaside Resort (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'url': 'https://cs1-74v4.vkuseraudio.net/p12/dbad498654a051.mp3?extra=-POoxwfW4Fe87YIZN0ysOJrD6lYwPlOrw7yLCqyzciVyWDPccofmc470wQA10fVOCSSxeMtR8PiIZi64zazuyCCsf8jYddd1BbaH-q2VN-KGljLRht6Voc4vvGI385O7QrNQae0MBBU9SovLoSg', 'size': 7441807} 
+Sat Sep 15 23:54:08 2018 Path, name disk:/!!!GhVifmn8zC1m39H/La Femme - Oceanside Seaside Resort (Bonus Track) (Bonus Track).mp3 La Femme - Oceanside Seaside Resort (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:08 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21GhVifmn8zC1m39H 
+Sat Sep 15 23:54:08 2018 Starting uploading... 
+Sat Sep 15 23:54:08 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/071322fc0971a3499a52f395f19a8363a0ae6a7198358d8a9599e37bbf610a63 
+Sat Sep 15 23:54:10 2018 Got status success 
+Sat Sep 15 23:54:10 2018 Uploaded! 
+Sat Sep 15 23:54:10 2018 Getting link 
+Sat Sep 15 23:54:10 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21GhVifmn8zC1m39H%2FLa+Femme+-+Oceanside+Seaside+Resort+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:10 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21GhVifmn8zC1m39H%2FLa+Femme+-+Oceanside+Seaside+Resort+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:10 2018 Got link https://yadi.sk/d/ZnnT9sc0sjRPLA 
+Sat Sep 15 23:54:10 2018 
+Sat Sep 15 23:54:10 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 23:54:10 2018 Working with {'title': 'Welcome America (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'url': 'https://cs1-45v4.vkuseraudio.net/p4/fafd63a611d4e8.mp3?extra=dzBr4J2MXMxo3TCzQSON7q7ZllJsIS6u7K2_fzMol619bNIisswS1DKJnYz5L4V8NetWT5IWHC-q3zjQtBMGw1jN2UhZJovAIyeqSiT4sg7XvTsPJiN3oBLOxEof6MqXSsBR3FEVJnpCW4SSWJ8', 'size': 5921480} 
+Sat Sep 15 23:54:10 2018 Path, name disk:/!!!ryd2w62SuEUHMqr/La Femme - Welcome America (Bonus Track) (Bonus Track).mp3 La Femme - Welcome America (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:11 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21ryd2w62SuEUHMqr 
+Sat Sep 15 23:54:11 2018 Starting uploading... 
+Sat Sep 15 23:54:11 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/22483fd0d3aeea6191c1911daea9abab748c207aff6df605bc52cb217fc677ef 
+Sat Sep 15 23:54:13 2018 Got status success 
+Sat Sep 15 23:54:13 2018 Uploaded! 
+Sat Sep 15 23:54:13 2018 Getting link 
+Sat Sep 15 23:54:13 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21ryd2w62SuEUHMqr%2FLa+Femme+-+Welcome+America+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:13 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21ryd2w62SuEUHMqr%2FLa+Femme+-+Welcome+America+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:14 2018 Got link https://yadi.sk/d/zLvw8OlZHREKFw 
+Sat Sep 15 23:54:14 2018 
+Sat Sep 15 23:54:14 2018 Choosen disk LoaderDawn3, token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Sat Sep 15 23:54:14 2018 Working with {'title': 'Paris 2012 (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'url': 'https://cs1-80v4.vkuseraudio.net/p11/d898e19b91390c.mp3?extra=i5uaMEOXGYmZvtZKdNtXScYxgJiI7ESf2yFECN2J4CoROjCzIf8rlcCE3lmxBluLrpFI8tIPGbsKMzO75BtxOIF7XrQ1VJEE7g5q3kH72TIiIzdJWqkIiAGep8UWEDna_WQp5WTOXlNqT2z5s3I', 'size': 6693660} 
+Sat Sep 15 23:54:14 2018 Path, name disk:/!!!skbs94oNRdCCLBi/La Femme - Paris 2012 (Bonus Track) (Bonus Track).mp3 La Femme - Paris 2012 (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:14 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21skbs94oNRdCCLBi 
+Sat Sep 15 23:54:14 2018 Starting uploading... 
+Sat Sep 15 23:54:14 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/36a39b384e599287fe48fb3f760e3721ba79f304549bfc19e12dc11d4e6f3e59 
+Sat Sep 15 23:54:16 2018 Got status success 
+Sat Sep 15 23:54:16 2018 Uploaded! 
+Sat Sep 15 23:54:16 2018 Getting link 
+Sat Sep 15 23:54:16 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21skbs94oNRdCCLBi%2FLa+Femme+-+Paris+2012+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:16 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21skbs94oNRdCCLBi%2FLa+Femme+-+Paris+2012+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:16 2018 Got link https://yadi.sk/d/p90bubXb5Qp6hQ 
+Sat Sep 15 23:54:16 2018 
+Sat Sep 15 23:54:16 2018 Part is done, message sent 
+Sat Sep 15 23:54:16 2018 
+Sat Sep 15 23:54:16 2018 
+Sat Sep 15 23:54:16 2018 Choosen disk LoaderDawn, token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Sat Sep 15 23:54:16 2018 Working with {'title': 'Le blues de Fran&#231;oise', 'artist': 'La Femme', 'vkurl': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'url': 'https://cs1-34v4.vkuseraudio.net/p15/c8cd82c5495c3c.mp3?extra=2rFPrkowZ4Y0Z-6qb4HOponAUXiBazBtbc1BLVWJRrmXRNDcPeo68EfGL0Gg-ifqUCXi4Zwpp229oLwWNJUmZgq7XEcmcpXdLB3G3EoNL8Dv5hPRVUTWBHlUzT6mRIJk6NHApRwf0Nd_ARZbBqc', 'size': 11103129} 
+Sat Sep 15 23:54:16 2018 Path, name disk:/!!!5_unNGVHjl6YzxG/La Femme - Le blues de Fran&#231;oise.mp3 La Femme - Le blues de Fran&#231;oise.mp3 
+Sat Sep 15 23:54:17 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%215_unNGVHjl6YzxG 
+Sat Sep 15 23:54:17 2018 Starting uploading... 
+Sat Sep 15 23:54:17 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/28bd217674d43dd51a32f76cdb2cb9394719aaa91648d81b6be56d08a21e4996 
+Sat Sep 15 23:54:20 2018 Got status success 
+Sat Sep 15 23:54:20 2018 Uploaded! 
+Sat Sep 15 23:54:20 2018 Getting link 
+Sat Sep 15 23:54:21 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%215_unNGVHjl6YzxG%2FLa+Femme+-+Le+blues+de+Fran%26%23231%3Boise.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:21 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%215_unNGVHjl6YzxG%2FLa+Femme+-+Le+blues+de+Fran%26%23231%3Boise.mp3 
+Sat Sep 15 23:54:21 2018 Got link https://yadi.sk/d/plE3r0lnySRhlw 
+Sat Sep 15 23:54:21 2018 
+Sat Sep 15 23:54:21 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:54:21 2018 Working with {'title': 'Si un jour', 'artist': 'La Femme', 'vkurl': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'url': 'https://cs1-68v4.vkuseraudio.net/p14/665edfcb4f0df9.mp3?extra=RkigUnEiYFFwsw-uEr7Tg624DLm1glyDb9VqQnLwjiCMfJogUdonVXbdD9r7Spk-5r6xui7emZI9lNgp8mc4ONiIzXRzH-_hfxIcBcCoVhEwM2y-qhQ8kmnpOuq4qEgplpl4wYvzdF2asEgQ-FE', 'size': 6339440} 
+Sat Sep 15 23:54:21 2018 Path, name disk:/!!!iKpL21vtbVQxqZF/La Femme - Si un jour.mp3 La Femme - Si un jour.mp3 
+Sat Sep 15 23:54:21 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21iKpL21vtbVQxqZF 
+Sat Sep 15 23:54:21 2018 Starting uploading... 
+Sat Sep 15 23:54:21 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/b89c10e75eb216fa7f8f40476532e98324f0a9d3321a7fbb61917332a3e095cd 
+Sat Sep 15 23:54:23 2018 Got status success 
+Sat Sep 15 23:54:23 2018 Uploaded! 
+Sat Sep 15 23:54:23 2018 Getting link 
+Sat Sep 15 23:54:24 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21iKpL21vtbVQxqZF%2FLa+Femme+-+Si+un+jour.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:24 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21iKpL21vtbVQxqZF%2FLa+Femme+-+Si+un+jour.mp3 
+Sat Sep 15 23:54:24 2018 Got link https://yadi.sk/d/89SaabGAQrkvCg 
+Sat Sep 15 23:54:24 2018 
+Sat Sep 15 23:54:24 2018 Choosen disk LoaderDawn3, token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Sat Sep 15 23:54:24 2018 Working with {'title': 'La femme ressort', 'artist': 'La Femme', 'vkurl': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'url': 'https://cs1-65v4.vkuseraudio.net/p11/9f43acbc418bfd.mp3?extra=pZnF2xZ2xd0J8XnWzDvo-8TyDZjGQ88mBq51BszmMjm_7xqPCgbINRKC5goFBi5p9OchBSYMSDy-Fa-I9n-i7gBs_XFpBmKO3Fu0-YUQOY0qjz4veA-oSM7igXjmTxkjHY_tqw56y0aLBytfDeY', 'size': 12922297} 
+Sat Sep 15 23:54:24 2018 Path, name disk:/!!!7WjSKcvZG3IRFkW/La Femme - La femme ressort.mp3 La Femme - La femme ressort.mp3 
+Sat Sep 15 23:54:24 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%217WjSKcvZG3IRFkW 
+Sat Sep 15 23:54:24 2018 Starting uploading... 
+Sat Sep 15 23:54:24 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/c519894060d62bacc1e10076dce835e633e9ce7be3935a29571aa8e48cf12fa0 
+Sat Sep 15 23:54:25 2018 Got status failed 
+Sat Sep 15 23:54:25 2018 !!Uploading error. Trying again. trys = 1 
+Sat Sep 15 23:54:25 2018 Starting uploading... 
+Sat Sep 15 23:54:25 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/0aad6dab346b69a64fcefd95169daef1d6b311e660cc9334dd39cf7a88af09ba 
+Sat Sep 15 23:54:28 2018 Got status success 
+Sat Sep 15 23:54:29 2018 Uploaded! 
+Sat Sep 15 23:54:29 2018 Getting link 
+Sat Sep 15 23:54:29 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%217WjSKcvZG3IRFkW%2FLa+Femme+-+La+femme+ressort.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:29 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%217WjSKcvZG3IRFkW%2FLa+Femme+-+La+femme+ressort.mp3 
+Sat Sep 15 23:54:29 2018 Got link https://yadi.sk/d/aVUwql8iE168YA 
+Sat Sep 15 23:54:29 2018 
+Sat Sep 15 23:54:29 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:54:29 2018 Working with {'title': 'Oh Baby Doll (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'url': 'https://cs1-75v4.vkuseraudio.net/p11/34a3231fc950a5.mp3?extra=CTZBEot6Y5RfJmMXSl2v-Y2N7P3wE5oAbseckLILetUuGra3tdW5EYaRcWxsfg3epVdrNjvqoigJP57iPwiwoG942CcbRYkw0Qaes_zDZJ7jcRUQZ1qrwgoslFOV1Z92q8nawG6411H9dBPYQuE', 'size': 7520174} 
+Sat Sep 15 23:54:29 2018 Path, name disk:/!!!WKPtvTm7TQV6VjO/La Femme - Oh Baby Doll (Bonus Track) (Bonus Track).mp3 La Femme - Oh Baby Doll (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:29 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21WKPtvTm7TQV6VjO 
+Sat Sep 15 23:54:29 2018 Starting uploading... 
+Sat Sep 15 23:54:30 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/23a85ed53b2ab4153a474a9d1dc255bd63c9d3b887c52a6df82e3b2414141f1c 
+Sat Sep 15 23:54:32 2018 Got status success 
+Sat Sep 15 23:54:32 2018 Uploaded! 
+Sat Sep 15 23:54:32 2018 Getting link 
+Sat Sep 15 23:54:32 2018 <LinkObject{'href': 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21WKPtvTm7TQV6VjO%2FLa+Femme+-+Oh+Baby+Doll+%28Bonus+Track%29+%28Bonus+Track%29.mp3', 'method': 'GET', 'templated': False}> 
+Sat Sep 15 23:54:32 2018 Publish req href https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21WKPtvTm7TQV6VjO%2FLa+Femme+-+Oh+Baby+Doll+%28Bonus+Track%29+%28Bonus+Track%29.mp3 
+Sat Sep 15 23:54:32 2018 Got link https://yadi.sk/d/6qNE8oENAGC73w 
+Sat Sep 15 23:54:32 2018 
+Sat Sep 15 23:54:32 2018 Choosen disk loaderdawn2, token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Sat Sep 15 23:54:32 2018 Working with {'title': 'Witchcraft (Bonus Track) (Bonus Track)', 'artist': 'La Femme', 'vkurl': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'url': 'https://cs1-64v4.vkuseraudio.net/p10/4d2be48a52bcc0.mp3?extra=E-LP72qIo13r-apYXTCMMazWN4ZZTs7ckafpIK79CwCrerEa6CmHKJibZqNP5HFVTcchGy4tQ78UIbWF_tCzwR5XubVmED3CPmIPbAIk3urm9Ew8eaF_oDEu4Aj0YBkDwzKug1MytPrIypPEDgE', 'size': 9173203} 
+Sat Sep 15 23:54:32 2018 Path, name disk:/!!!ELeBbMxCPWRPefR/La Femme - Witchcraft (Bonus Track) (Bonus Track).mp3 La Femme - Witchcraft (Bonus Track) (Bonus Track).mp3 
+Sat Sep 15 23:54:33 2018 mkdir req href: https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F%21%21%21ELeBbMxCPWRPefR 
+Sat Sep 15 23:54:33 2018 Starting uploading... 
+Sat Sep 15 23:54:33 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/5149aa7fea0074853b0b029cbea6d1b9bc329b5d39dc1fe03990179c704c137e 
+Sat Sep 15 23:54:38 2018 Got status failed 
+Sat Sep 15 23:54:38 2018 !!Uploading error. Trying again. trys = 1 
+Sat Sep 15 23:54:38 2018 Starting uploading... 
+Sat Sep 15 23:54:38 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/92f88f9c80a01d3fbc2f3dc6513677ec8b84019e0f0fae1d5203932af86ed26a 
+Sat Sep 15 23:54:39 2018 Got status failed 
+Sat Sep 15 23:54:39 2018 !!Uploading error. Trying again. trys = 2 
+Sat Sep 15 23:54:39 2018 Starting uploading... 
+Sat Sep 15 23:54:39 2018 upload req href: https://cloud-api.yandex.net/v1/disk/operations/5ede6deded464093c43ed1406556e4cfdbd41fea6e7aad2d7a7d71ef65e6465f 
