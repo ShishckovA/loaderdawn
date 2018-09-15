@@ -23,7 +23,6 @@ with open("tokens") as f:
     token_list = f.read().split()
 
 
-
 def PrintException():
     exc_type, exc_obj, tb = sys.exc_info()
     f = tb.tb_frame
@@ -293,9 +292,9 @@ vk_session=vk_api.VkApi(token='69b45538d6872a5232a7e0c5224bec7543aa87f2cccc8cbc7
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
 
-stop_all = False
-session_updater_th = threading.Thread(target=session_updater)
-session_updater_th.start()
+# stop_all = False
+# session_updater_th = threading.Thread(target=session_updater)
+# session_updater_th.start()
 
 log("Started!")
 while 1:
@@ -320,8 +319,8 @@ while 1:
 
     except KeyboardInterrupt:
         log("Exiting\n\n")
-        stop_all = True
-        session_updater_th.join()
+        # stop_all = True
+        # session_updater_th.join()
         exit(0)
     # except BaseException:
         # PrintException()
