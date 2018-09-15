@@ -279,7 +279,7 @@ def process(user_id, message_id, message):
                     ]) + 
                 "\n=====================")
         log("Answered!\n\n")
-        log("Time -", end - time.time)
+        log("Time -", end - time.time())
 
     # except BaseException:
         # vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
