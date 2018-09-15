@@ -296,6 +296,7 @@ longpoll = VkLongPoll(vk_session)
 # session_updater_th = threading.Thread(target=session_updater)
 # session_updater_th.start()
 
+session_updater()
 log("Started!")
 while 1:
     try:
