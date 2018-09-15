@@ -278,7 +278,7 @@ def process(user_id, message_id, message):
                     ]) + 
                 "\n=====================")
         log("Answered!\n\n")
-        log("Time -", end - time.time())
+        log("Time -", time.time() - start)
 
     # except BaseException:
         # vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
@@ -292,11 +292,13 @@ vk_session=vk_api.VkApi(token='69b45538d6872a5232a7e0c5224bec7543aa87f2cccc8cbc7
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
 
+vkauth = VKAuth("7331733@gmail.com", "15431543", api_v=api_v)
+vkauth.auth()
+session_html = vkauth.get_session()
 # stop_all = False
 # session_updater_th = threading.Thread(target=session_updater)
 # session_updater_th.start()
 
-session_updater()
 log("Started!")
 while 1:
     try:
