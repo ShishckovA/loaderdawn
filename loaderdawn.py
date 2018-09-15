@@ -182,7 +182,7 @@ def get_yadisk_url(audio):
         log("!!Uploading error. Trying again. trys =", trys)
     else:
         log("Max try exceeded")
-        raise BaseException("!!!!!MAx try!")
+        raise BaseException("!!!!MAx try!")
 
     log("Uploaded!")
 
