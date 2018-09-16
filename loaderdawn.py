@@ -236,7 +236,6 @@ def process(user_id, message_id, message):
         log(traceback.format_exc())
 
 
-
 log("Getting settings")
 settings = read_settings()
 
