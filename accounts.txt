@@ -1,4 +1,0 @@
-https://oauth.yandex.ru/
-https://oauth.yandex.ru/client/new
-https://oauth.yandex.ru/verification_code
-https://oauth.yandex.ru/authorize?response_type=token&client_id=1ca15bdde6014550a5c3ce8e0b65618c
