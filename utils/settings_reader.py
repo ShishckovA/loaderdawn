@@ -12,7 +12,7 @@ def read_settings():
     settings = {}
     setting_keys = ["vk_user_login", "vk_user_password", "vk_user_id", "vk_group_token", "vk_group_id"]
     line_n = -1
-    with open("settings") as f:
+    with open("settings.set") as f:
         lines = f.read().split("\n")
         for key in setting_keys:
             line_n = next_good(lines, line_n)
