@@ -3,11 +3,8 @@
 import yadisk
 from .log import log
 
-def check_disks():
+def check_disks(token_list):
     log("Getting new disk list...")
-    with open("tokens") as f:
-        token_list = f.read().split()
-
     ya_disks = []
     for t in token_list:
         log("Checking token", t)

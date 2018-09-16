@@ -8,3 +8,22 @@ Sun Sep 16 20:08:07 2018 Checking token <yandex
 Sun Sep 16 20:08:07 2018 Checking token tokens> 
 Sun Sep 16 20:08:07 2018 Got 0 disks 
 Sun Sep 16 20:08:07 2018 Started! 
+Sun Sep 16 20:46:36 2018 Getting new disk list... 
+Sun Sep 16 20:46:36 2018 Checking token <ya> 
+Sun Sep 16 20:46:36 2018 Checking token <disk> 
+Sun Sep 16 20:46:36 2018 Checking token <tokens> 
+Sun Sep 16 20:46:36 2018 Got 0 disks 
+Sun Sep 16 20:47:30 2018 Getting new disk list... 
+Sun Sep 16 20:47:30 2018 Checking token <ya> 
+Sun Sep 16 20:47:30 2018 Checking token <disk> 
+Sun Sep 16 20:47:30 2018 Checking token <tokens> 
+Sun Sep 16 20:47:30 2018 Got 0 disks 
+Sun Sep 16 20:49:29 2018 Getting new disk list... 
+Sun Sep 16 20:49:29 2018 Checking token <disk> 
+Sun Sep 16 20:49:29 2018 Checking token <tokens> 
+Sun Sep 16 20:49:29 2018 Got 0 disks 
+Sun Sep 16 20:50:37 2018 Getting new disk list... 
+Sun Sep 16 20:50:37 2018 Checking token <ya> 
+Sun Sep 16 20:50:37 2018 Checking token <disk> 
+Sun Sep 16 20:50:37 2018 Checking token <tokens> 
+Sun Sep 16 20:50:37 2018 Got 0 disks 

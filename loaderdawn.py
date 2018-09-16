@@ -238,8 +238,10 @@ def process(user_id, message_id, message):
 
 settings = read_settings()
 
-ya_disks = get_disks()
-    
+print(settings)
+ya_disks = check_disks(settings["yadisk_tokens"])
+
+
 vk_session=vk_api.VkApi(token=settings["vk_group_token"]) #group token
 
 vk = vk_session.get_api()
