@@ -1,23 +1,19 @@
 #vk_user_login
-7331733@gmail.com
+<vk_user_login>
 
 #vk_user_password
-15431543
+<vk_user_password>
 
 #vk_user_id
-424549238
+<vk_user_id>
 
 #vk_group_token
-69b45538d6872a5232a7e0c5224bec7543aa87f2cccc8cbc7019269aa81fc83aa5017dd0e6939616ab539
+<vk_group_token>
 
 #vk_group_id
--169324329
+<vk_group_id>
 
 #yadisk_tokens (to the end of the file)
-AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s
-AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg
-AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw
-AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8
-AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8
-AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8
-AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk
+<ya>
+<disk>
+<tokens>
