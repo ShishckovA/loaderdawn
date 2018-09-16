@@ -15,7 +15,7 @@ import threading
 import linecache
 from utils.log import log
 from utils.VKAuth import *
-from utils.disk_checker import get_disks
+from utils.disk_checker import check_disks
 from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
