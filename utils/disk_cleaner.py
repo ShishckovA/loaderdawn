@@ -2,11 +2,12 @@
 
 import yadisk
 import datetime
+from .settings_reader import read_settings
+import time
 from .log import log
 
 def clear_disks(stime=0):
-    with open("../tokens") as f:
-        token_list = f.read().split()
+    token_list = read_settings()["yadisk_tokens"]
 
     for t in token_list:
         disk = yadisk.YaDisk(token=t)
@@ -18,5 +19,6 @@ def clear_disks(stime=0):
                 if int(fold["created"].timestamp()) > stime:
                     disk.remove(fold["path"]) 
                     print("Removed %s" % fold["path"])
+        time.sleep(1)
         disk.remove_trash("/")
         print("Trash cleared!")

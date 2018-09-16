@@ -103,3 +103,22 @@ Sun Sep 16 20:57:18 2018 Answered!
 Sun Sep 16 20:58:28 2018 Exiting
 
  
+Mon Sep 17 01:36:06 2018 Opening disk LoaderDawn with token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Mon Sep 17 01:36:13 2018 Opening disk loaderdawn2 with token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Mon Sep 17 01:36:21 2018 Opening disk LoaderDawn3 with token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Mon Sep 17 01:36:26 2018 Opening disk LoaderDawn4 with token AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 
+Mon Sep 17 01:36:30 2018 Opening disk LoaderDawn5 with token AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8 
+Mon Sep 17 01:36:41 2018 Opening disk LoaderDawn with token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Mon Sep 17 01:36:41 2018 Opening disk loaderdawn2 with token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Mon Sep 17 01:36:43 2018 Opening disk LoaderDawn3 with token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Mon Sep 17 01:36:43 2018 Opening disk LoaderDawn4 with token AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 
+Mon Sep 17 01:36:44 2018 Opening disk LoaderDawn5 with token AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8 
+Mon Sep 17 01:36:44 2018 Opening disk LoaderDawn6 with token AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8 
+Mon Sep 17 01:36:45 2018 Opening disk LoaderDawn7 with token AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk 
+Mon Sep 17 01:37:33 2018 Opening disk LoaderDawn with token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Mon Sep 17 01:37:34 2018 Opening disk loaderdawn2 with token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Mon Sep 17 01:37:36 2018 Opening disk LoaderDawn3 with token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Mon Sep 17 01:37:38 2018 Opening disk LoaderDawn4 with token AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 
+Mon Sep 17 01:37:39 2018 Opening disk LoaderDawn5 with token AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8 
+Mon Sep 17 01:37:41 2018 Opening disk LoaderDawn6 with token AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8 
+Mon Sep 17 01:37:42 2018 Opening disk LoaderDawn7 with token AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk 

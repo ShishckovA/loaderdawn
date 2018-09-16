@@ -197,7 +197,7 @@ def process(user_id, message_id, message):
             download_and_send(audios, 5, user_id)
 
             log("End time", time.time())
-            with open("times.txt", "a+") as f:
+            with open(".utils/times.txt", "a+") as f:
                 f.write(str(time.time() - start) + " ") 
                 f.write(str(s) + " ") 
                 f.write(str(len(audios)) + " ") 
