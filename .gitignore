@@ -1,6 +1,7 @@
 settings.txt
 accounts.txt
 test.py
-logs/
+logs/log.txt
+logs/time.txt
 utils/__pycache__/
 __pycache__/
