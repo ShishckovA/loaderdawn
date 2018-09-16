@@ -247,7 +247,7 @@ vk_session=vk_api.VkApi(token=settings["vk_group_token"]) #group token
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
 
-vkauth = VKAuth(settings["vk_login"], settings["vk_password"], api_v=api_v)
+vkauth = VKAuth(settings["vk_user_login"], settings["vk_user_password"], api_v=api_v)
 vkauth.auth()
 session_html = vkauth.get_session()
 # stop_all = False
