@@ -14,8 +14,8 @@ import traceback
 import threading
 import linecache
 from utils.log import log
-from utils.disk_checker import get_disks
 from utils.VKAuth import *
+from utils.disk_checker import get_disks
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 
@@ -28,24 +28,6 @@ def rand_st():
     for i in range(l):
         st += allowed_symbols[random.randint(0, len(allowed_symbols) - 1)]
     return st
-
-def session_updater():
-    global session_html
-    try:
-        while 1:
-            log("Updating session...")
-            vkauth = VKAuth("7331733@gmail.com", "15431543", api_v=api_v)
-            vkauth.auth()
-            session_html = vkauth.get_session()
-            log("Session updated!")
-            for i in range(7200):
-                time.sleep(0.5)
-                if stop_all:
-                    return
-
-    except BaseException:
-        log(traceback.format_exc())
-        session_updater()
 
 def get_message():
     global session_html
