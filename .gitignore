@@ -2,3 +2,4 @@ tokens
 accounts.txt
 logs/log.txt
 logs/times.txt
+__pycache__/
