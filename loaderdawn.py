@@ -243,6 +243,7 @@ log("Got", settings)
 
 ya_disks = check_disks(settings["yadisk_tokens"])
 
+
 vk_session=vk_api.VkApi(token=settings["vk_group_token"])
 
 vk = vk_session.get_api()
