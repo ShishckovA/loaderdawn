@@ -1,0 +1,22 @@
+Mon Sep 17 01:45:51 2018 Getting settings 
+Mon Sep 17 01:45:51 2018 Got {'vk_user_login': '7331733@gmail.com', 'vk_user_password': '15431543', 'vk_user_id': '424549238', 'vk_group_token': '69b45538d6872a5232a7e0c5224bec7543aa87f2cccc8cbc7019269aa81fc83aa5017dd0e6939616ab539', 'vk_group_id': '-169324329', 'yadisk_tokens': ['AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s', 'AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg', 'AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw', 'AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8', 'AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8', 'AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8', 'AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk']} 
+Mon Sep 17 01:45:51 2018 Getting new disk list... 
+Mon Sep 17 01:45:51 2018 Checking token AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 
+Mon Sep 17 01:45:52 2018 Username - LoaderDawn 
+Mon Sep 17 01:45:52 2018 Checking token AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 
+Mon Sep 17 01:45:52 2018 Username - loaderdawn2 
+Mon Sep 17 01:45:52 2018 Checking token AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 
+Mon Sep 17 01:45:52 2018 Username - LoaderDawn3 
+Mon Sep 17 01:45:52 2018 Checking token AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 
+Mon Sep 17 01:45:53 2018 Username - LoaderDawn4 
+Mon Sep 17 01:45:53 2018 Checking token AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8 
+Mon Sep 17 01:45:53 2018 Username - LoaderDawn5 
+Mon Sep 17 01:45:53 2018 Checking token AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8 
+Mon Sep 17 01:45:53 2018 Username - LoaderDawn6 
+Mon Sep 17 01:45:53 2018 Checking token AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk 
+Mon Sep 17 01:45:53 2018 Username - LoaderDawn7 
+Mon Sep 17 01:45:53 2018 Got 7 disks 
+Mon Sep 17 01:45:54 2018 Started! 
+Mon Sep 17 01:45:55 2018 Exiting
+
+ 
