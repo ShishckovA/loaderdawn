@@ -245,6 +245,7 @@ ya_disks = check_disks(settings["yadisk_tokens"])
 vk_session=vk_api.VkApi(token=settings["vk_group_token"])
 
 vk = vk_session.get_api()
+
 longpoll = VkLongPoll(vk_session)
 
 vkauth = VKAuth(settings["vk_user_login"], settings["vk_user_password"], api_v=api_v)
