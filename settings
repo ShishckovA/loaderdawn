@@ -1,0 +1,19 @@
+#vk_login
+<vk_login>
+
+#vk_password
+<vk_password>
+
+#vk_id
+<vk_id>
+
+#vk_group_token
+<vk_group_token>
+
+#vk_group_id
+<vk_group_id>
+
+#yadisk_tokens (to the end of the file)
+<ya>
+<disk>
+<tokens>

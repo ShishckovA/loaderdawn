@@ -1,0 +1,10 @@
+Sun Sep 16 20:07:33 2018 Getting new disk list... 
+Sun Sep 16 20:07:33 2018 Checking token <yandex 
+Sun Sep 16 20:07:33 2018 Checking token tokens> 
+Sun Sep 16 20:07:34 2018 Got 0 disks 
+Sun Sep 16 20:07:34 2018 Started! 
+Sun Sep 16 20:08:07 2018 Getting new disk list... 
+Sun Sep 16 20:08:07 2018 Checking token <yandex 
+Sun Sep 16 20:08:07 2018 Checking token tokens> 
+Sun Sep 16 20:08:07 2018 Got 0 disks 
+Sun Sep 16 20:08:07 2018 Started! 

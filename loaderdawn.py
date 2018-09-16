@@ -16,6 +16,7 @@ import linecache
 from utils.log import log
 from utils.VKAuth import *
 from utils.disk_checker import get_disks
+from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 
@@ -42,7 +43,7 @@ def get_message():
         "hash" : hash_st,
         "method" : "messages.getHistory",
         "param_count": "1",
-        "param_user_id": "-169324329",
+        "param_user_id": settings["vk_group_id"],
         "param_v": api_v
     }
     message = session_html.post("https://vk.com/dev", data=d).content
@@ -233,16 +234,18 @@ def process(user_id, message_id, message):
     except BaseException:
         vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
         log(traceback.format_exc())
-    
+
+
+settings = read_settings()
 
 ya_disks = get_disks()
     
-vk_session=vk_api.VkApi(token='69b45538d6872a5232a7e0c5224bec7543aa87f2cccc8cbc7019269aa81fc83aa5017dd0e6939616ab539') #group token
+vk_session=vk_api.VkApi(token=settings["vk_group_token"]) #group token
 
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
 
-vkauth = VKAuth("7331733@gmail.com", "15431543", api_v=api_v)
+vkauth = VKAuth(settings["vk_login"], settings["vk_password"], api_v=api_v)
 vkauth.auth()
 session_html = vkauth.get_session()
 # stop_all = False
@@ -262,7 +265,7 @@ while 1:
                 vk.messages.setActivity(user_id=user_id, type="typing")
                 log("Read, typing")
                 
-                redir_id = vk.messages.send(forward_messages=message_id, user_id=424549238)
+                redir_id = vk.messages.send(forward_messages=message_id, user_id=settings["vk_user_id"])
                 log("Message redirected, id = %d" % redir_id)
 
                 message = get_message()["fwd_messages"][0]

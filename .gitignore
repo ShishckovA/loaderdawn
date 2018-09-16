@@ -1,5 +1,5 @@
-# tokens
-# accounts.txt
-# logs/
+accounts.txt
+test.py
+logs/
 utils/__pycache__/
 __pycache__/
