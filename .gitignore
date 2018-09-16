@@ -1,4 +1,4 @@
 tokens
 accounts.txt
-log.txt
-times.txt
+logs/log.txt
+logs/times.txt

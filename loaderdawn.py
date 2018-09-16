@@ -10,27 +10,16 @@ import random
 import vk_api
 import yadisk
 import requests
+import traceback
 import threading
 import linecache
 from utils.log import log
+from utils.disk_checker import get_disks
 from utils.VKAuth import *
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 
 api_v = 5.84
-
-with open("tokens") as f:
-    token_list = f.read().split()
-
-
-def PrintException():
-    exc_type, exc_obj, tb = sys.exc_info()
-    f = tb.tb_frame
-    lineno = tb.tb_lineno
-    filename = f.f_code.co_filename
-    linecache.checkcache(filename)
-    line = linecache.getline(filename, lineno, f.f_globals)
-    log('EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj))
 
 def rand_st():
     l = 15
@@ -39,22 +28,6 @@ def rand_st():
     for i in range(l):
         st += allowed_symbols[random.randint(0, len(allowed_symbols) - 1)]
     return st
-
-def get_disks():
-    log("Getting new disk list...")
-    ya_disks = []
-    for t in token_list:
-        c_disk = yadisk.YaDisk(token=t)
-        if c_disk.check_token():
-            info = c_disk.get_disk_info()
-            if info["total_space"] - info["used_space"] > 30 * 2 ** 20: # 30 mb
-                ya_disks.append({
-                    "disk"     : c_disk, 
-                    "token"    : t, 
-                    "username" : info["user"]["login"]
-                    })
-    log("Got %d disks" % len(ya_disks))
-    return ya_disks
 
 def session_updater():
     global session_html
@@ -71,7 +44,7 @@ def session_updater():
                     return
 
     except BaseException:
-        PrintException()
+        log(traceback.format_exc())
         session_updater()
 
 def get_message():
@@ -127,11 +100,9 @@ def download_and_send(audios, aps, user_id):
         audios_part = audios[i : min(i + aps, len(audios))]
         for i in range(len(audios_part)):
             audios_part[i]["url"] = get_yadisk_url(audios_part[i])
-            log()
+            log("\n")
         send_audios(audios_part, user_id)
-        log("Part is done, message sent")
-        log()
-        log()
+        log("Part is done, message sent\n\n")
     
 def get_yadisk_url(audio):
     c_disk = random.choice(ya_disks)
@@ -182,7 +153,6 @@ def get_yadisk_url(audio):
     log(data)    
     pbl = data["href"]
     log("Publish req href", pbl)
-
     r = requests.get(data["href"], headers=headers)
     jsn = r.json()
     while not "public_url" in jsn:
@@ -230,11 +200,9 @@ def send_pl(url, user_id):
 
 
 def process(user_id, message_id, message):
-    # try:
+    try:
         audios = get_audios(message)
-        log("Found %d audios, starting sending" % len(audios))
-        log()
-        log()
+        log("Found %d audios, starting sending\n\n" % len(audios))
         if audios:
             s = 0
             for elem in audios:
@@ -277,12 +245,12 @@ def process(user_id, message_id, message):
                     "Порекомендуешь меня друзьям?",
                     ]) + 
                 "\n=====================")
-        log("Answered!\n\n")
         log("Time -", time.time() - start)
+        log("Answered!\n\n")
 
-    # except BaseException:
-        # vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
-        # PrintException()
+    except BaseException:
+        vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
+        log(traceback.format_exc())
     
 
 ya_disks = get_disks()
@@ -325,5 +293,5 @@ while 1:
         # stop_all = True
         # session_updater_th.join()
         exit(0)
-    # except BaseException:
-        # PrintException()
+    except BaseException:
+        log(traceback.format_exc())
