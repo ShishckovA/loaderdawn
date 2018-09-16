@@ -1,6 +1,5 @@
 tokens
 accounts.txt
-logs/log.txt
-logs/times.txt
+logs/
 utils/__pycache__/
 __pycache__/

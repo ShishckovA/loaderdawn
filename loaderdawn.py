@@ -82,9 +82,9 @@ def download_and_send(audios, aps, user_id):
         audios_part = audios[i : min(i + aps, len(audios))]
         for i in range(len(audios_part)):
             audios_part[i]["url"] = get_yadisk_url(audios_part[i])
-            log("\n")
+            log()
         send_audios(audios_part, user_id)
-        log("Part is done, message sent\n\n")
+        log("Part is done, message sent\n")
     
 def get_yadisk_url(audio):
     c_disk = random.choice(ya_disks)
