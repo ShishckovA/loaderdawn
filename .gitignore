@@ -1,4 +1,5 @@
 accounts.txt
+settings
 test.py
 logs/
 utils/__pycache__/

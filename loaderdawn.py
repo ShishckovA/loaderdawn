@@ -236,13 +236,14 @@ def process(user_id, message_id, message):
         log(traceback.format_exc())
 
 
+log("Getting settings")
 settings = read_settings()
 
-print(settings)
+log("Got", settings)
+
 ya_disks = check_disks(settings["yadisk_tokens"])
 
-
-vk_session=vk_api.VkApi(token=settings["vk_group_token"]) #group token
+vk_session=vk_api.VkApi(token=settings["vk_group_token"])
 
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
@@ -250,9 +251,6 @@ longpoll = VkLongPoll(vk_session)
 vkauth = VKAuth(settings["vk_user_login"], settings["vk_user_password"], api_v=api_v)
 vkauth.auth()
 session_html = vkauth.get_session()
-# stop_all = False
-# session_updater_th = threading.Thread(target=session_updater)
-# session_updater_th.start()
 
 log("Started!")
 while 1:
