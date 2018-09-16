@@ -1,0 +1,16 @@
+https://oauth.yandex.ru/
+https://oauth.yandex.ru/client/new
+https://oauth.yandex.ru/verification_code
+https://oauth.yandex.ru/authorize?response_type=token&client_id=1ca15bdde6014550a5c3ce8e0b65618c
+
+Логин                      Токен                      Пароль
+Loaderdawn   AQAAAAAooQc8AAUxV39jjmthM0EuioWRtP6lb-s 15431543
+loaderdawn2  AQAAAAAq48n7AAUxV6JleUtVyUmNkgZtvT6UdHg 15431543
+LoaderDawn3  AQAAAAArAaa5AAUxV8kxjrRd9UgzhUkx2fq7Pgw 15431543
+LoaderDawn4  AQAAAAArAa6GAAUxV_Llv4g44kDRgV0DzLs-3c8 15431543
+LoaderDawn5  AQAAAAArME2UAAUxV5pHzLRboUWkuobLtEHP6J8 15431543
+LoaderDawn6  AQAAAAArMFd7AAUxV92qqpTFfkY5lJYrM2z1ug8 15431543
+LoaderDawn7  AQAAAAArMGAMAAUxV8NfwZeHT0uQoKmYOisuRjk 15431543
+LoaderDawn8  AQAAAAArMGwcAAUxVzoHsUckN0OXlOFUzV4rEs4 15431543 #
+LoaderDawn9  AQAAAAArMHGlAAUxV65F0A1tx0ccjozGsSf61Oo 15431543 #
+LoaderDawn10 AQAAAAArMHeHAAUxV8bfmTGpvk0IlqUB6b0inBc 15431543 #
