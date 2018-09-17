@@ -80,7 +80,7 @@ def download_and_send(audios, aps, user_id):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
     
-    
+
 def get_yadisk_url(audio):
     c_disk = random.choice(ya_disks)
     ytoken = c_disk["token"]
@@ -192,7 +192,7 @@ def process(user_id, message_id, message):
             download_and_send(audios, 5, user_id)
 
             log("End time", time.time())
-            with open(".utils/times.txt", "a+") as f:
+            with open("./logs/times.txt", "a+") as f:
                 f.write(str(time.time() - start) + " ") 
                 f.write(str(s) + " ") 
                 f.write(str(len(audios)) + " ") 
