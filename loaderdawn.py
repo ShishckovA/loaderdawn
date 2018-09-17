@@ -16,19 +16,12 @@ import linecache
 from utils.log import log
 from utils.VKAuth import *
 from utils.disk_checker import check_disks
+from utils.strings import rand_st, cut
 from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 
 api_v = 5.84
-
-def rand_st():
-    l = 15
-    allowed_symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ1234567890_"
-    st = ""
-    for i in range(l):
-        st += allowed_symbols[random.randint(0, len(allowed_symbols) - 1)]
-    return st
 
 def get_message():
     global session_html
@@ -104,8 +97,9 @@ def get_yadisk_url(audio):
     fold = "!!!" + rand_st()
 
     name = ("%s - %s.mp3" % (audio["artist"], audio["title"])).replace("/", "|")
+    name = cut(name, 255)
     path = "disk:/%s/%s" % (fold, name)
-    log("Path, name", path, name)
+    log("path", path)
 
     mkd = disk.mkdir(fold)["href"]
     log("mkdir req href:", mkd)
