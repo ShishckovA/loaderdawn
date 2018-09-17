@@ -90,7 +90,7 @@ def get_yadisk_url(audio):
         "Content-Type" : "application/json",
         "Authorization" : c_disk["token"]
     }
-    max_try = 10
+    max_try = -1
 
     log("Choosen disk %s, token %s" % (c_disk["username"], ytoken))
     log("Working with", audio)
@@ -106,7 +106,7 @@ def get_yadisk_url(audio):
     log("mkdir req href:", mkd)
 
     trys = 0
-    while trys < max_try:
+    while trys != max_try:
         trys += 1
         log("Starting uploading...")
         upl = disk.upload_url(audio["vkurl"], path)["href"]
@@ -125,21 +125,21 @@ def get_yadisk_url(audio):
 
     log("Uploaded!")
 
-    log("Getting link") 
-    data = disk.publish(path)
-    
-    log(data)    
-    pbl = data["href"]
-    log("Publish req href", pbl)
-    r = requests.get(data["href"], headers=headers)
-    jsn = r.json()
-    while not "public_url" in jsn:
-        try: 
-            log("Searching url...")
+    while 1:
+        try:
+            log("Getting link") 
+            data = disk.publish(path)
+            
+            log(data)    
+            pbl = data["href"]
+            log("Publish req href", pbl)
             r = requests.get(data["href"], headers=headers, timeout=2)
             jsn = r.json()
+            if "public_url" in jsn:
+                break 
         except BaseException:
-            pass
+            log(traceback.format_exc())
+         
 
     ydisk_url = jsn["public_url"]
     log("Got link", ydisk_url)
@@ -181,13 +181,13 @@ def process(user_id, message_id, message):
     try:
         audios = get_audios(message)
         log("Found %d audios, starting sending\n\n" % len(audios))
+        start = time.time()
+        log("Start time", start)
         if audios:
             s = 0
             for elem in audios:
                 s += elem["size"]
             log("All size:", s)
-            start = time.time()
-            log("Start time", start)
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
             download_and_send(audios, 5, user_id)
 
