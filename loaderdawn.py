@@ -80,6 +80,7 @@ def download_and_send(audios, aps, user_id):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
     
+    
 def get_yadisk_url(audio):
     c_disk = random.choice(ya_disks)
     ytoken = c_disk["token"]
