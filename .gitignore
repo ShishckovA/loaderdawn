@@ -2,6 +2,6 @@ settings.txt
 accounts.txt
 test.py
 logs/log.txt
-logs/time.txt
+logs/times.txt
 utils/__pycache__/
 __pycache__/
