@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import threading
 
 class rethread(threading.Thread):

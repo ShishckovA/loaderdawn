@@ -15,9 +15,9 @@ import threading
 import linecache
 from utils.log import log
 from utils.VKAuth import *
-from utils.disk_checker import check_disks
 from utils.strings import rand_st, cut
 from utils.multiprocess import rethread
+from utils.disk_checker import check_disks
 from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
@@ -56,7 +56,7 @@ def get_audios(message):
                 url = t["audio"]["url"]
                 if not url:
                     continue
-                headers = requests.head(url).headers
+                headers = requests.head(url, timeout=2).headers
                 audio = {
                          "title" : t["audio"]["title"],
                         "artist" : t["audio"]["artist"],
@@ -77,7 +77,7 @@ def download_and_send(audios, aps, user_id):
         audios_part = audios[i : min(i + aps, len(audios))]
         rethreads = []
         for i in range(len(audios_part)):
-            reth = rethread(target=get_yadisk_url, args=(audios_part[i],))
+            reth = rethread(target=get_yadisk_url, args=(audios_part[i],), name=audios_part[i]["title"])
             reth.start()
             rethreads.append(reth)
             log()
@@ -280,13 +280,11 @@ while 1:
 
                 message = get_message()["fwd_messages"][0]
 
-                th = threading.Thread(target=process, args=[user_id, message_id, message])
+                th = threading.Thread(target=process, args=[user_id, message_id, message], name="Processing")
                 th.start()
 
     except KeyboardInterrupt:
         log("Exiting\n\n")
-        # stop_all = True
-        # session_updater_th.join()
         exit(0)
     except BaseException:
         log(traceback.format_exc())
