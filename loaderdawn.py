@@ -17,6 +17,7 @@ from utils.log import log
 from utils.VKAuth import *
 from utils.disk_checker import check_disks
 from utils.strings import rand_st, cut
+from utils.multiprocess import rethread
 from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
@@ -74,9 +75,21 @@ def get_audios(message):
 def download_and_send(audios, aps, user_id):
     for i in range(0, len(audios), aps):
         audios_part = audios[i : min(i + aps, len(audios))]
+        rethreads = []
         for i in range(len(audios_part)):
-            audios_part[i]["url"] = get_yadisk_url(audios_part[i])
+            reth = rethread(target=get_yadisk_url, args=(audios_part[i],))
+            reth.start()
+            rethreads.append(reth)
             log()
+        while 1:
+            for i in range(len(audios_part)):
+                success, result = rethreads[i].get_result()
+                if not success:
+                    break
+                else:
+                    audios_part[i]["url"] = result
+            else:
+                break
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
     
@@ -116,8 +129,11 @@ def get_yadisk_url(audio):
         while st == "in-progress":
             st = disk.get_operation_status(upl)
         log("Got status", st)
-        if requests.get(upl, headers=headers).json()["status"] == "success":
-            break
+        try:
+            if requests.get(upl, headers=headers).json()["status"] == "success":
+                break
+        except BaseException:
+            pass
         log("!!Uploading error. Trying again. trys =", trys)
     else:
         log("Max try exceeded")
@@ -145,7 +161,6 @@ def get_yadisk_url(audio):
     log("Got link", ydisk_url)
 
     return ydisk_url
-
 
 def send_audios(audios, user_id):
     text = ""
