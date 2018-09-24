@@ -130,6 +130,7 @@ def get_yadisk_url(audio):
         while st == "in-progress":
             st = disk.get_operation_status(upl)
             log("Got status", st)
+            time.sleep(0.5)
         try:
             if requests.get(upl, headers=headers).json()["status"] == "success":
                 break
@@ -152,6 +153,7 @@ def get_yadisk_url(audio):
             log("Publish req href", pbl)
             r = requests.get(data["href"], headers=headers, timeout=2)
             jsn = r.json()
+            time.sleep(0.5)
             if "public_url" in jsn:
                 break 
         except BaseException:
