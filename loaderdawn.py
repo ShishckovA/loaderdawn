@@ -8,7 +8,6 @@ import json
 import wget
 import random
 import vk_api
-import yadisk
 import requests
 import traceback
 import threading
@@ -23,6 +22,8 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 
 
 api_v = 5.84
+WORKDIR = os.path.dirname(os.path.abspath(__file__))
+os.chdir(WORKDIR)
 
 def get_message():
     global session_html
@@ -128,7 +129,7 @@ def get_yadisk_url(audio):
         st = requests.get(upl, headers=headers).json()["status"]
         while st == "in-progress":
             st = disk.get_operation_status(upl)
-        log("Got status", st)
+            log("Got status", st)
         try:
             if requests.get(upl, headers=headers).json()["status"] == "success":
                 break
