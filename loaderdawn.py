@@ -214,13 +214,6 @@ def process(user_id, message_id, message):
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
             download_and_send(audios, 5, user_id)
 
-            log("End time", time.time())
-            with open("./logs/times.txt", "a+") as f:
-                f.write(str(time.time() - start) + " ") 
-                f.write(str(s) + " ") 
-                f.write(str(len(audios)) + " ") 
-                f.write("\n")
-
 
         log("Audios succsedfully sent")
 
@@ -246,6 +239,7 @@ def process(user_id, message_id, message):
                     "Порекомендуешь меня друзьям?",
                     ]) + 
                 "\n=====================")
+        log("End time", time.time())
         log("Time -", time.time() - start)
         log("Answered!\n\n")
 
