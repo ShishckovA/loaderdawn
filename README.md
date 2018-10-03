@@ -2,9 +2,11 @@
 Бот для скачивания музыки из ВК
 
 Установка:
+```bash
 pip3 install -r requirements.txt
 mkdir logs
 nano settings.txt
+```
 
 Пример файла settings.txt:
 ```
