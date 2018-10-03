@@ -13,7 +13,7 @@ def rand_st():
 def cut(string, ln):
     if string.count("."):
         ext = string[string.rfind("."):]
-        body = string[:string.rfind(".") - 1]
+        body = string[:string.rfind(".")]
     else:
         body = string
         ext = ""

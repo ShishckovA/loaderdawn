@@ -14,8 +14,9 @@ import threading
 import linecache
 from utils.log import log
 from utils.VKAuth import *
-from utils.disk_checker import check_disks
 from utils.strings import rand_st, cut
+from utils.multiprocess import rethread
+from utils.disk_checker import check_disks
 from utils.settings_reader import read_settings
 from vk_api.longpoll import VkLongPoll, VkEventType
 
@@ -56,7 +57,7 @@ def get_audios(message):
                 url = t["audio"]["url"]
                 if not url:
                     continue
-                headers = requests.head(url).headers
+                headers = requests.head(url, timeout=2).headers
                 audio = {
                          "title" : t["audio"]["title"],
                         "artist" : t["audio"]["artist"],
@@ -75,13 +76,25 @@ def get_audios(message):
 def download_and_send(audios, aps, user_id):
     for i in range(0, len(audios), aps):
         audios_part = audios[i : min(i + aps, len(audios))]
+        rethreads = []
         for i in range(len(audios_part)):
-            audios_part[i]["url"] = get_yadisk_url(audios_part[i])
+            reth = rethread(target=get_yadisk_url, args=(audios_part[i],), name=audios_part[i]["title"])
+            reth.start()
+            rethreads.append(reth)
             log()
+        while 1:
+            for i in range(len(audios_part)):
+                success, result = rethreads[i].get_result()
+                if not success:
+                    break
+                else:
+                    audios_part[i]["url"] = result
+            else:
+                break
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
     
-    
+
 def get_yadisk_url(audio):
     c_disk = random.choice(ya_disks)
     ytoken = c_disk["token"]
@@ -91,7 +104,7 @@ def get_yadisk_url(audio):
         "Content-Type" : "application/json",
         "Authorization" : c_disk["token"]
     }
-    max_try = 10
+    max_try = -1
 
     log("Choosen disk %s, token %s" % (c_disk["username"], ytoken))
     log("Working with", audio)
@@ -107,7 +120,7 @@ def get_yadisk_url(audio):
     log("mkdir req href:", mkd)
 
     trys = 0
-    while trys < max_try:
+    while trys != max_try:
         trys += 1
         log("Starting uploading...")
         upl = disk.upload_url(audio["vkurl"], path)["href"]
@@ -116,10 +129,15 @@ def get_yadisk_url(audio):
         st = requests.get(upl, headers=headers).json()["status"]
         while st == "in-progress":
             st = disk.get_operation_status(upl)
+<<<<<<< HEAD
         log("Got status", st)
         if requests.get(upl, headers=headers).json()["status"] == "success":
             break
             log("Got status", st)
+=======
+            log("Got status", st)
+            time.sleep(0.5)
+>>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
         try:
             if requests.get(upl, headers=headers).json()["status"] == "success":
                 break
@@ -132,27 +150,27 @@ def get_yadisk_url(audio):
 
     log("Uploaded!")
 
-    log("Getting link") 
-    data = disk.publish(path)
-    
-    log(data)    
-    pbl = data["href"]
-    log("Publish req href", pbl)
-    r = requests.get(data["href"], headers=headers)
-    jsn = r.json()
-    while not "public_url" in jsn:
-        try: 
-            log("Searching url...")
+    while 1:
+        try:
+            log("Getting link") 
+            data = disk.publish(path)
+            
+            log(data)    
+            pbl = data["href"]
+            log("Publish req href", pbl)
             r = requests.get(data["href"], headers=headers, timeout=2)
             jsn = r.json()
+            time.sleep(0.5)
+            if "public_url" in jsn:
+                break 
         except BaseException:
-            pass
+            log(traceback.format_exc())
+         
 
     ydisk_url = jsn["public_url"]
     log("Got link", ydisk_url)
 
     return ydisk_url
-
 
 def send_audios(audios, user_id):
     text = ""
@@ -189,17 +207,24 @@ def process(user_id, message_id, message):
         audios = get_audios(message)
         log("Found %d audios, starting sending\n\n" % len(audios))
         start = time.time()
+<<<<<<< HEAD
+=======
+        log("Start time", start)
+>>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
         if audios:
             s = 0
             for elem in audios:
                 s += elem["size"]
             log("All size:", s)
+<<<<<<< HEAD
             log("Start time", start)
+=======
+>>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
             download_and_send(audios, 5, user_id)
 
             log("End time", time.time())
-            with open(".utils/times.txt", "a+") as f:
+            with open("./logs/times.txt", "a+") as f:
                 f.write(str(time.time() - start) + " ") 
                 f.write(str(s) + " ") 
                 f.write(str(len(audios)) + " ") 
@@ -272,13 +297,11 @@ while 1:
 
                 message = get_message()["fwd_messages"][0]
 
-                th = threading.Thread(target=process, args=[user_id, message_id, message])
+                th = threading.Thread(target=process, args=[user_id, message_id, message], name="Processing")
                 th.start()
 
     except KeyboardInterrupt:
         log("Exiting\n\n")
-        # stop_all = True
-        # session_updater_th.join()
         exit(0)
     except BaseException:
         log(traceback.format_exc())
