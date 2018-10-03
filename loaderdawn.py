@@ -207,19 +207,13 @@ def process(user_id, message_id, message):
         audios = get_audios(message)
         log("Found %d audios, starting sending\n\n" % len(audios))
         start = time.time()
-<<<<<<< HEAD
-=======
         log("Start time", start)
->>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
         if audios:
             s = 0
             for elem in audios:
                 s += elem["size"]
             log("All size:", s)
-<<<<<<< HEAD
             log("Start time", start)
-=======
->>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
             download_and_send(audios, 5, user_id)
 
