@@ -129,15 +129,12 @@ def get_yadisk_url(audio):
         st = requests.get(upl, headers=headers).json()["status"]
         while st == "in-progress":
             st = disk.get_operation_status(upl)
-<<<<<<< HEAD
         log("Got status", st)
         if requests.get(upl, headers=headers).json()["status"] == "success":
             break
             log("Got status", st)
-=======
             log("Got status", st)
             time.sleep(0.5)
->>>>>>> 8f78250a5826bb623c0489de2316e47227d61218
         try:
             if requests.get(upl, headers=headers).json()["status"] == "success":
                 break
