@@ -1,4 +1,0 @@
-language: python3
-script: 
- - lodaerdawn.py
-
