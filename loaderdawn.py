@@ -116,18 +116,15 @@ def get_yadisk_url(audio):
         st = requests.get(upl, headers=headers).json()["status"]
         while st == "in-progress":
             st = disk.get_operation_status(upl)
-<<<<<<< HEAD
         log("Got status", st)
         if requests.get(upl, headers=headers).json()["status"] == "success":
             break
-=======
             log("Got status", st)
         try:
             if requests.get(upl, headers=headers).json()["status"] == "success":
                 break
         except BaseException:
             pass
->>>>>>> 91ca3d4... Added variable WORKDIR, now you can run Bot from whereever you want
         log("!!Uploading error. Trying again. trys =", trys)
     else:
         log("Max try exceeded")
@@ -191,12 +188,12 @@ def process(user_id, message_id, message):
     try:
         audios = get_audios(message)
         log("Found %d audios, starting sending\n\n" % len(audios))
+        start = time.time()
         if audios:
             s = 0
             for elem in audios:
                 s += elem["size"]
             log("All size:", s)
-            start = time.time()
             log("Start time", start)
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
             download_and_send(audios, 5, user_id)
