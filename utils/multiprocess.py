@@ -3,6 +3,7 @@
 import threading
 
 class rethread(threading.Thread):
+    '''A thread that returns a result with a get_result() function'''
     def __init__(self, group=None, target=None, name=None,
                  args=(), kwargs={}, Verbose=None):
         threading.Thread.__init__(self, group, target, name, args, kwargs)

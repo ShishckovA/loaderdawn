@@ -1,8 +1,7 @@
 import random
 from .log import log
 
-def rand_st():
-    l = 15
+def rand_st(l):
     allowed_symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ1234567890_"
     st = ""
     for i in range(l):

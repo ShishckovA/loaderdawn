@@ -11,7 +11,7 @@ def next_good(lines, i):
 
 def read_settings():
     settings = {}
-    setting_keys = ["vk_user_login", "vk_user_password", "vk_user_id", "vk_group_token", "vk_group_id"]
+    setting_keys = ["api_v", "vk_user_login", "vk_user_password", "vk_user_id", "vk_group_token", "vk_group_id"]
     line_n = -1
     print(os.listdir(path="."))
     with open("./settings.txt", "r") as f:
