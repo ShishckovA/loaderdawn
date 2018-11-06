@@ -1,10 +1,12 @@
-from .multiprocess import rethread
-from .strings import rand_st, cut
+# -*- coding: utf-8 -*-
+
+import time
 import random
-from .log import log
 import requests
 import traceback
-import time
+from .log import log
+from .strings import rand_st, cut
+from .multiprocess import rethread
 
 def download_by_parts(audios, aps, ya_disks):
     for i in range(0, len(audios), aps):

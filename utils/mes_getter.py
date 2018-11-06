@@ -1,4 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import json
+import time
+import threading
 from .log import log
 from .strings import rand_st
 
@@ -12,9 +16,21 @@ class MesGetter:
 
         self.session_user = self.vk_user.get_session()
 
-        self.locked = False
+        # self.updater_thr = threading.Thread(target=self.updater, args=(5,))
+        # self.updater_thr.start()
+        # self.locked = False
+        # log("asdasdasdasdasdasd")
+
+    # def updater(self, timeout):
+    #     while 1:
+    #         self.session_user.get("https://vk.com/dev/messages.getHistory")
+    #         time.sleep(0.5)
+    #         print(1)
+
+            
 
     def reget_message(self, message_id):
+        self.updater_thr.kill()
         while self.locked:
             pass
 

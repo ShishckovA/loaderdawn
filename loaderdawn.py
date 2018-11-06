@@ -65,7 +65,7 @@ def get_pl_url(message):
 def send_pl(url, user_id):
     pl_audio = []
 
-    html_code = session_html.get(url).content.decode("utf-8")
+    html_code = vk.http.get(url).content.decode("utf-8")
 
     for t in [m.start() for m in re.finditer('id="audio', html_code)]:
         first = html_code.find("_", t)
@@ -98,7 +98,7 @@ def process(user_id, message_id):
                 s += elem["size"]
             log("All size:", s)
             log("Start time", start)
-            vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю скачивать!\n=====================" % len(audios))
+            vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю создавать ссылки!\n=====================" % len(audios))
             for audios_part in download_by_parts(audios, 5, ya_disks):
                 send_audios(audios_part, user_id)
                 log("Part is done, message sent\n")

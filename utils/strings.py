@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import random
 from .log import log
 
