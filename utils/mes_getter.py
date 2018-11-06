@@ -18,7 +18,7 @@ class MesGetter:
 
         # self.updater_thr = threading.Thread(target=self.updater, args=(5,))
         # self.updater_thr.start()
-        # self.locked = False
+        self.locked = False
         # log("asdasdasdasdasdasd")
 
     # def updater(self, timeout):
@@ -30,7 +30,6 @@ class MesGetter:
             
 
     def reget_message(self, message_id):
-        self.updater_thr.kill()
         while self.locked:
             pass
 

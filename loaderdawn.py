@@ -65,7 +65,7 @@ def get_pl_url(message):
 def send_pl(url, user_id):
     pl_audio = []
 
-    html_code = vk.http.get(url).content.decode("utf-8")
+    html_code = vk_session.http.get(url).content.decode("utf-8")
 
     for t in [m.start() for m in re.finditer('id="audio', html_code)]:
         first = html_code.find("_", t)
@@ -142,7 +142,7 @@ settings = read_settings()
 log("Got", settings)
 
 ya_disks = check_disks(settings["yadisk_tokens"])
-vk_session=vk_api.VkApi(token=settings["vk_group_token"])
+vk_session = vk_api.VkApi(token=settings["vk_group_token"])
 
 vk = vk_session.get_api()
 
