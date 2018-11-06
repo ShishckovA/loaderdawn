@@ -19,11 +19,10 @@ def download_by_parts(audios, aps, ya_disks):
             log()
         while 1:
             for i in range(len(audios_part)):
-                success, result = rethreads[i].get_result()
-                if not success:
+                if rethreads[i].is_alive():
                     break
                 else:
-                    audios_part[i]["url"] = result
+                    audios_part[i]["url"] = rethreads[i]._return
             else:
                 break
         yield audios_part

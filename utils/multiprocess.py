@@ -14,4 +14,4 @@ class rethread(threading.Thread):
             self._return = self._target(*self._args, **self._kwargs)
             self.ended = True
     def get_result(self):
-        return self.ended, self._return
+        return self._return

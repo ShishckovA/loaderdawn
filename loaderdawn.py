@@ -43,7 +43,7 @@ def get_audios(message):
                             }
                 log(audio["vkurl"])
                 audios.append(audio)
-                
+
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
             audios += get_audios(fwd_mes)
@@ -60,6 +60,11 @@ def get_pl_url(message):
         for attachment in message["attachments"]:
             if attachment["type"] == "link" and attachment["link"]["caption"] == "Плейлист":
                return attachment["link"]["url"]
+    if "fwd_messages" in message:
+        for fwd_mes in message["fwd_messages"]:
+            t = get_pl_url(fwd_mes)
+            if t:
+                return t
     return False
 
 def send_pl(url, user_id):
@@ -131,7 +136,7 @@ def process(user_id, message_id):
         log("Time -", time.time() - start)
         log("Answered!\n\n")
 
-    except BaseException:
+    except Exception:
         vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
         log(traceback.format_exc())
 
@@ -169,4 +174,6 @@ while 1:
         log("Exiting\n\n")
         exit(0)
     except BaseException:
+        for i in range(123123123):
+            print(i)
         log(traceback.format_exc())
