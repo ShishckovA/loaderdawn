@@ -2,10 +2,12 @@
 
 import json
 import time
+import random
+import requests
 import threading
 from .log import log
 from .strings import rand_st
-import random
+from .audiomusic import Audio
 
 class MesGetter:
     def __init__(self, vk_user, vk_group, settings):
@@ -65,3 +67,52 @@ class MesGetter:
         decoded_message = decoded_message[pos_resp:]
         result = json.loads(decoded_message)["response"]["items"][0]
         return result
+
+    def get_vk_audios(self, id_arr):
+        aps = 10
+        audios = []
+        for i in range(0, len(id_arr), aps):
+
+            cids = id_arr[i : min(len(id_arr), i + aps)]
+            attachnent_st = ""
+            for id in cids:
+                st = "audio%s_%s" % (id["owner_id"], id["id"])
+                if "access_token" in id:
+                    st += "_%s" % id["access_token"]
+                attachnent_st += st + ","
+
+
+            while self.locked:
+                pass
+            self.locked = True
+
+            try:
+                key = rand_st(5)
+                redir_id = self.vk_group.messages.send(message=key, attachment=attachnent_st, user_id=self.vk_user_id)
+                log("Message with key %s redirected, id = %d" % (key, redir_id))
+
+                m = self.check_message()
+                log("Got message back with key = %s" % m["text"])
+                if m["text"] != key:
+                    self.locked = False
+                    raise Exception("Key is not valid")
+            except BaseException as e:
+                self.locked = False
+                raise Exception(e)    
+
+            self.locked = False
+            for attachment in m["attachments"]:
+                url = attachment["audio"]["url"]
+                if not url:
+                    continue
+                headers = requests.head(url, timeout=2).headers
+                audio = Audio(title = attachment["audio"]["title"], 
+                             artist = attachment["audio"]["artist"], 
+                              vkurl = url, 
+                               size = int(headers["Content-Length"]))
+
+                log(audio.vkurl)
+                audios.append(audio)
+
+        return audios
+

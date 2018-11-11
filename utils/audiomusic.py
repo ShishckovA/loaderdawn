@@ -10,3 +10,8 @@ class Audio:
             url = vkurl
         else:
             self.url = url
+
+    def __str__(self):
+        return self.artist + " - " + self.title
+    def __repr__(self):
+        return str(self)
