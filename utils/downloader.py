@@ -13,7 +13,7 @@ def download_by_parts(audios, aps, ya_disks):
         audios_part = audios[i : min(i + aps, len(audios))]
         rethreads = []
         for i in range(len(audios_part)):
-            reth = rethread(target=get_yadisk_url, args=(audios_part[i], ya_disks), name=audios_part[i]["title"])
+            reth = rethread(target=get_yadisk_url, args=(audios_part[i], ya_disks), name=audios_part[i].title)
             reth.start()
             rethreads.append(reth)
         while 1:
@@ -21,7 +21,7 @@ def download_by_parts(audios, aps, ya_disks):
                 if rethreads[i].alive():
                     break
                 else:
-                    audios_part[i]["url"] = rethreads[i].result()
+                    audios_part[i].url = rethreads[i].result()
             else:
                 break
         yield audios_part
@@ -43,7 +43,7 @@ def get_yadisk_url(audio, ya_disks):
 
     fold = "!!!" + rand_st(15)
 
-    name = ("%s - %s.mp3" % (audio["artist"], audio["title"])).replace("/", "|")
+    name = ("%s - %s.mp3" % (audio.artist, audio.title)).replace("/", "|")
     name = cut(name, 255)
     path = "disk:/%s/%s" % (fold, name)
     log("path", path)
@@ -55,7 +55,7 @@ def get_yadisk_url(audio, ya_disks):
     while trys != max_try:
         trys += 1
         log("Starting uploading...")
-        upl = disk.upload_url(audio["vkurl"], path)["href"]
+        upl = disk.upload_url(audio.vkurl, path)["href"]
         log("upload req href:", upl)
 
         st = disk.get_operation_status(upl)
@@ -97,4 +97,3 @@ def get_yadisk_url(audio, ya_disks):
     log("Got link", ydisk_url)
 
     return ydisk_url
-

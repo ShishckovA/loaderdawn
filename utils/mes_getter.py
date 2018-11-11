@@ -5,6 +5,7 @@ import time
 import threading
 from .log import log
 from .strings import rand_st
+import random
 
 class MesGetter:
     def __init__(self, vk_user, vk_group, settings):
@@ -25,14 +26,19 @@ class MesGetter:
 
         self.locked = True
 
-        key = rand_st(5)
-        redir_id = self.vk_group.messages.send(message=key, forward_messages=message_id, user_id=self.vk_user_id)
-        log("Message with key %s redirected, id = %d" % (key, redir_id))
+        try:
+            key = rand_st(5)
+            redir_id = self.vk_group.messages.send(message=key, forward_messages=message_id, user_id=self.vk_user_id)
+            log("Message with key %s redirected, id = %d" % (key, redir_id))
 
-        m = self.check_message()
-        log("Got message back with key = %s" % m["text"])
-        if m["text"] != key:
-            raise Exception("Key is not valid")
+            m = self.check_message()
+            log("Got message back with key = %s" % m["text"])
+            if m["text"] != key:
+                self.locked = False
+                raise Exception("Key is not valid")
+        except BaseException as e:
+            self.locked = False
+            raise Exception(e)    
 
         self.locked = False
         return m["fwd_messages"][0]

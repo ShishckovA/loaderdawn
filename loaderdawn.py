@@ -15,6 +15,7 @@ import linecache
 from utils.log import log
 from utils.VKAuth import *
 from utils.downloader import *
+from utils.audiomusic import Audio
 from utils.mes_getter import MesGetter
 from utils.disk_utils import check_disks
 from utils.settings_reader import read_settings
@@ -34,14 +35,8 @@ def get_audios(message):
                 if not url:
                     continue
                 headers = requests.head(url, timeout=2).headers
-                audio = {
-                         "title" : t["audio"]["title"],
-                        "artist" : t["audio"]["artist"],
-                         "vkurl" : url,
-                         "url"   : url,
-                         "size"  : int(headers["Content-Length"])
-                            }
-                log(audio["vkurl"])
+                audio = Audio(title=t["audio"]["title"], artist=t["audio"]["artist"], vkurl=url, size=int(headers["Content-Length"]))
+                log(audio.vkurl)
                 audios.append(audio)
 
     if "fwd_messages" in message:
@@ -52,7 +47,7 @@ def get_audios(message):
 def send_audios(audios, user_id):
     text = ""
     for audio in audios:
-        text += "%s - %s\n%s\n\n" % (audio["artist"], audio["title"], audio["url"])
+        text += "%s - %s\n%s\n\n" % (audio.artist, audio.title, audio.url)
     vk.messages.send(user_id=user_id, message=text)
 
 def get_pl_url(message):
@@ -92,16 +87,19 @@ def process(user_id, message_id):
         vk.messages.setActivity(user_id=user_id, type="typing")
         log("Read, typing")
 
+        # m = vk.messages.getById(message_ids=message_id)   
+        # log(m)
+
         message = mgetter.reget_message(message_id)
         audios = get_audios(message)
         log("Found %d audios, starting sending\n\n" % len(audios))
         start = time.time()
         log("Start time", start)
         if audios:
-            s = 0
-            for elem in audios:
-                s += elem["size"]
-            log("All size:", s)
+            all_size = 0
+            for audio in audios:
+                all_size += audio.size
+            log("All size:", all_size)
             log("Start time", start)
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю создавать ссылки!\n=====================" % len(audios))
             for audios_part in download_by_parts(audios, 5, ya_disks):
@@ -174,6 +172,4 @@ while 1:
         log("Exiting\n\n")
         exit(0)
     except BaseException:
-        for i in range(123123123):
-            print(i)
         log(traceback.format_exc())
