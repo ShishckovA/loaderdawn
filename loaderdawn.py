@@ -94,8 +94,9 @@ def get_wall_audio_ids(message):
                         audio["access_token"] = t["audio"]["access_token"]
                     audios.append(audio)
 
-    for fwd_mes in message["fwd_messages"]:
-        audios += get_wall_audio_ids(fwd_mes)
+    if "fwd_messages" in message:
+        for fwd_mes in message["fwd_messages"]:
+            audios += get_wall_audio_ids(fwd_mes)
     return audios
 
 def process(user_id, message_id):
@@ -140,7 +141,7 @@ def process(user_id, message_id):
         else:
             log("No playlist url found")
 
-        if not audios:
+        if not audios and not pl_url:
             log("No audios, no playlist. Zachem pisal? Neyasno. ")
             vk.messages.send(user_id=user_id, message="=====================\nПришли мне песню или плейлист, и я помогу тебе скачать твою любимую музыку!\n=====================")
         else:
