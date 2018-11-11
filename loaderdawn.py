@@ -39,7 +39,7 @@ def get_attached_audio_ids(message):
 
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
-            audios += get_audio_ids(fwd_mes)
+            audios += get_attached_audio_ids(fwd_mes)
     return audios
 
 def send_audios(audios, user_id):
@@ -85,7 +85,7 @@ def get_wall_audio_ids(message):
     for bigat in message["attachments"]:
         if bigat["type"] == "wall":
             for t in bigat["wall"]["attachments"]:
-                if t["type"] == "audio":
+                if t["type"] == "audio":    
                     audio = {
                               "id" : t["audio"]["id"],
                         "owner_id" : t["audio"]["owner_id"]
@@ -95,7 +95,7 @@ def get_wall_audio_ids(message):
                     audios.append(audio)
 
     for fwd_mes in message["fwd_messages"]:
-        audios += get_audio_ids(fwd_mes)
+        audios += get_wall_audio_ids(fwd_mes)
     return audios
 
 def process(user_id, message_id):
