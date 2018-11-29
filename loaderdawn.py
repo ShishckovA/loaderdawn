@@ -96,8 +96,6 @@ def get_wall_audio_info(message):
                           "artist" : t["audio"]["artist"],
                            "title" : t["audio"]["title"]
                     }
-                    if "url" in t["audio"]:
-                        audio["url"] = t["audio"]["url"]
                     if "access_token" in t["audio"]:
                         audio["access_token"] = t["audio"]["access_token"]
                     audios.append(audio)
