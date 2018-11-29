@@ -24,22 +24,26 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 WORKDIR = os.path.dirname(os.path.abspath(__file__))
 os.chdir(WORKDIR)
 
-def get_attached_audio_ids(message):
+def get_attached_audio_info(message):
     audios = []
     if "attachments" in message:
         for t in message["attachments"]:
             if t["type"] == "audio":
                 audio = {
                           "id" : t["audio"]["id"],
-                    "owner_id" : t["audio"]["owner_id"]
+                    "owner_id" : t["audio"]["owner_id"],
+                      "artist" : t["audio"]["artist"],
+                       "title" : t["audio"]["title"]
                 }
+                if "url" in t["audio"]:
+                    audio["url"] = t["audio"]["url"]
                 if "access_token" in t["audio"]:
                     audio["access_token"] = t["audio"]["access_token"]
                 audios.append(audio)
 
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
-            audios += get_attached_audio_ids(fwd_mes)
+            audios += get_attached_audio_info(fwd_mes)
     return audios
 
 def send_audios(audios, user_id):
@@ -80,23 +84,27 @@ def send_pl(url, user_id):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
 
-def get_wall_audio_ids(message):
+def get_wall_audio_info(message):
     audios = []
     for bigat in message["attachments"]:
         if bigat["type"] == "wall":
             for t in bigat["wall"]["attachments"]:
-                if t["type"] == "audio":    
+                if t["type"] == "audio":
                     audio = {
                               "id" : t["audio"]["id"],
-                        "owner_id" : t["audio"]["owner_id"]
+                        "owner_id" : t["audio"]["owner_id"],
+                          "artist" : t["audio"]["artist"],
+                           "title" : t["audio"]["title"]
                     }
+                    if "url" in t["audio"]:
+                        audio["url"] = t["audio"]["url"]
                     if "access_token" in t["audio"]:
                         audio["access_token"] = t["audio"]["access_token"]
                     audios.append(audio)
 
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
-            audios += get_wall_audio_ids(fwd_mes)
+            audios += get_wall_audio_info(fwd_mes)
     return audios
 
 def process(user_id, message_id):
@@ -110,12 +118,29 @@ def process(user_id, message_id):
         message = vk.messages.getById(message_ids=message_id)["items"][0]
         log(message)
 
-        ids = []
-        ids += get_attached_audio_ids(message)
-        ids += get_wall_audio_ids(message)
+        infos = []
+        infos += get_attached_audio_info(message)
+        infos += get_wall_audio_info(message)
+        withurl = []
+        nourl = []
+        for elem in infos:
+            if "url" in elem:
+                withurl.append(elem)
+            else:
+                nourl.append(elem)
 
-        log("ids:", ids)
-        audios = mgetter.get_vk_audios(ids)
+        log("Infos:", infos)
+        log("\nWith url:", withurl)
+        log("\nNo url:", nourl)
+
+        audios = []
+        for elem in withurl:
+            audios.append(Audio(
+                   title = elem["title"], 
+                  artist = elem["artist"], 
+                   vkurl = elem["url"]
+                ))
+        audios += mgetter.get_vk_audios(nourl)
         log("Found %d audios, starting sending\n\n" % len(audios))
         start = time.time()
         log("Start time", start)

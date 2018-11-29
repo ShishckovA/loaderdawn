@@ -1,5 +1,5 @@
 class Audio:
-    def __init__(self, url=None, title=None, artist=None, vkurl=None, size=None):
+    def __init__(self, url=None, title=None, artist=None, vkurl=None, size=0):
 
         self.title = title
         self.artist = artist
