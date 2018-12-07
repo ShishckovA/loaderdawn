@@ -9,6 +9,9 @@ from .log import log
 from .strings import rand_st
 from .audiomusic import Audio
 
+def rand():
+    return random.randint(1, 10000000)
+
 class MesGetter:
     def __init__(self, vk_user, vk_group, settings):
         self.vk_user = vk_user
@@ -30,7 +33,7 @@ class MesGetter:
 
         try:
             key = rand_st(5)
-            redir_id = self.vk_group.messages.send(message=key, forward_messages=message_id, user_id=self.vk_user_id)
+            redir_id = self.vk_group.messages.send(message=key, forward_messages=message_id, user_id=self.vk_user_id, random_id=rand())
             log("Message with key %s redirected, id = %d" % (key, redir_id))
 
             m = self.check_message()
@@ -88,7 +91,7 @@ class MesGetter:
 
             try:
                 key = rand_st(5)
-                redir_id = self.vk_group.messages.send(message=key, attachment=attachnent_st, user_id=self.vk_user_id)
+                redir_id = self.vk_group.messages.send(message=key, attachment=attachnent_st, user_id=self.vk_user_id, random_id=rand())
                 log("Message with key %s redirected, id = %d" % (key, redir_id))
 
                 m = self.check_message()

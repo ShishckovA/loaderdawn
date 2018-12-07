@@ -24,6 +24,9 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 WORKDIR = os.path.dirname(os.path.abspath(__file__))
 os.chdir(WORKDIR)
 
+def rand():
+    return random.randint(1, 10000000)
+
 def get_attached_audio_info(message):
     audios = []
     if "attachments" in message:
@@ -50,7 +53,7 @@ def send_audios(audios, user_id):
     text = ""
     for audio in audios:
         text += "%s - %s\n%s\n\n" % (audio.artist, audio.title, audio.url)
-    vk.messages.send(user_id=user_id, message=text)
+    vk.messages.send(user_id=user_id, message=text, random_id=rand())
 
 def get_pl_url(message):
     if "attachments" in message:
@@ -148,7 +151,7 @@ def process(user_id, message_id):
                 all_size += audio.size
             log("All size:", all_size)
             log("Start time", start)
-            vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю создавать ссылки!\n=====================" % len(audios))
+            vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю создавать ссылки!\n=====================" % len(audios), random_id=rand())
             for audios_part in download_by_parts(audios, 5, ya_disks):
                 send_audios(audios_part, user_id)
                 log("Part is done, message sent\n")
@@ -166,10 +169,10 @@ def process(user_id, message_id):
 
         if not audios and not pl_url:
             log("No audios, no playlist. Zachem pisal? Neyasno. ")
-            vk.messages.send(user_id=user_id, message="=====================\nПришли мне песню или плейлист, и я помогу тебе скачать твою любимую музыку!\n=====================")
+            vk.messages.send(user_id=user_id, message="=====================\nПришли мне песню или плейлист, и я помогу тебе скачать твою любимую музыку!\n=====================", random_id=rand())
         else:
             time.sleep(0.5)
-            vk.messages.send(user_id=user_id, message="=====================\n" +  
+            vk.messages.send(user_id=user_id, random_id=rand(), message="=====================\n" +  
                 random.choice([
                     "Ура, ещё одно успешное скачивание!", 
                     "Всё получилось!",
@@ -182,7 +185,7 @@ def process(user_id, message_id):
         log("Answered!\n\n")
 
     except Exception:
-        vk.messages.send(user_id=user_id, message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
+        vk.messages.send(user_id=user_id, random_id=rand(), message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
         log(traceback.format_exc())
 
 
