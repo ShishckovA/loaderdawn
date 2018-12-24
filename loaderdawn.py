@@ -112,8 +112,6 @@ def process(user_id, message_id):
     try:
         log("New message: m_id = %d" % message_id)
 
-        vk.messages.markAsRead(peer_id=user_id, start_message_id=message_id)
-        vk.messages.setActivity(user_id=user_id, type="typing")
         log("Read, typing")
 
         message = vk.messages.getById(message_ids=message_id)["items"][0]
