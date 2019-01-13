@@ -111,7 +111,6 @@ def get_wall_audio_info(message):
 def process(user_id, message_id):
     try:
         log("New message: m_id = %d" % message_id)
-
         log("Read, typing")
 
         message = vk.messages.getById(message_ids=message_id)["items"][0]
@@ -181,10 +180,10 @@ def process(user_id, message_id):
         log("End time", time.time())
         log("Time -", time.time() - start)
         log("Answered!\n\n")
-
     except Exception:
         vk.messages.send(user_id=user_id, random_id=rand(), message="=====================\nОй!\nЧто-то пошло не так. Мне искренне жаль.\nПопробуй ещё раз, что ли...\n=====================")
         log(traceback.format_exc())
+
 
 
 log("Getting settings")

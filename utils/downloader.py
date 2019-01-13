@@ -8,6 +8,7 @@ from .log import log
 from .strings import rand_st, cut
 from .multiprocess import rethread
 
+
 def download_by_parts(audios, aps, ya_disks):
     for i in range(0, len(audios), aps):
         audios_part = audios[i : min(i + aps, len(audios))]
@@ -31,13 +32,11 @@ def get_yadisk_url(audio, ya_disks):
     c_disk = random.choice(ya_disks)
     ytoken = c_disk["token"]
     disk = c_disk["disk"]
-
     headers = {
         "Content-Type" : "application/json",
         "Authorization" : c_disk["token"]
     }
     max_try = -1
-
     log("Choosen disk %s, token %s" % (c_disk["username"], ytoken))
     log("Working with", audio)
 
@@ -63,7 +62,6 @@ def get_yadisk_url(audio, ya_disks):
             log("Got status", st)
             st = disk.get_operation_status(upl)
         log("Got status", st)
-
         try:
             if st == "success":
                 break
@@ -92,6 +90,7 @@ def get_yadisk_url(audio, ya_disks):
         except BaseException:
             log(traceback.format_exc())
          
+
 
     ydisk_url = jsn["public_url"]
     log("Got link", ydisk_url)
