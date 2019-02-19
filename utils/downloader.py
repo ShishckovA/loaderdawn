@@ -84,9 +84,9 @@ def get_yadisk_url(audio, ya_disks):
             log("Publish req href", pbl)
             r = requests.get(data["href"], headers=headers, timeout=2)
             jsn = r.json()
-            time.sleep(0.5)
             if "public_url" in jsn:
                 break 
+            time.sleep(0.5)
         except BaseException:
             log(traceback.format_exc())
          
