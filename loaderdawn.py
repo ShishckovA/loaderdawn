@@ -156,7 +156,7 @@ def process(user_id, message_id):
         log("Audios succsedfully sent")
 
         log("Searching playlist url")
-        print(message)
+        
         pl_url = get_pl_url(message)
 
         if pl_url:
