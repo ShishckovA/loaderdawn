@@ -58,7 +58,7 @@ def send_audios(audios, user_id):
 def get_pl_url(message):
     if "attachments" in message:
         for attachment in message["attachments"]:
-            if attachment["type"] == "link" and attachment["link"]["caption"] == "Плейлист":
+            if attachment["type"] == "link" and attachment["link"]["caption"] in ["Плейлист", "Playlist"]:
                return attachment["link"]["url"]
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
@@ -156,6 +156,7 @@ def process(user_id, message_id):
         log("Audios succsedfully sent")
 
         log("Searching playlist url")
+        print(message)
         pl_url = get_pl_url(message)
 
         if pl_url:
