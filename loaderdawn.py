@@ -53,7 +53,7 @@ def send_audios(audios, user_id):
     text = ""
     for audio in audios:
         text += "%s - %s\n%s\n\n" % (audio.artist, audio.title, audio.url)
-    vk.messages.send(user_id=user_id, message=text, random_id=rand())
+    vk.messages.send(user_id=user_id, message=text, random_id=rand(), dont_parse_links=True)
 
 def get_pl_url(message):
     if "attachments" in message:

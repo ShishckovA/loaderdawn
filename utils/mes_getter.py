@@ -77,12 +77,12 @@ class MesGetter:
         for i in range(0, len(id_arr), aps):
 
             cids = id_arr[i : min(len(id_arr), i + aps)]
-            attachnent_st = ""
+            attachment_st = ""
             for id in cids:
                 st = "audio%s_%s" % (id["owner_id"], id["id"])
                 if "access_token" in id:
                     st += "_%s" % id["access_token"]
-                attachnent_st += st + ","
+                attachment_st += st + ","
 
 
             while self.locked:
@@ -91,7 +91,8 @@ class MesGetter:
 
             try:
                 key = rand_st(5)
-                redir_id = self.vk_group.messages.send(message=key, attachment=attachnent_st, user_id=self.vk_user_id, random_id=rand())
+                redir_id = self.vk_group.messages.send(message=key, attachment=attachment_st, user_id=self.vk_user_id, random_id=rand())
+                print(attachment_st)
                 log("Message with key %s redirected, id = %d" % (key, redir_id))
 
                 m = self.check_message()
