@@ -92,7 +92,6 @@ class MesGetter:
             try:
                 key = rand_st(5)
                 redir_id = self.vk_group.messages.send(message=key, attachment=attachment_st, user_id=self.vk_user_id, random_id=rand())
-                print(attachment_st)
                 log("Message with key %s redirected, id = %d" % (key, redir_id))
 
                 m = self.check_message()
