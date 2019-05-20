@@ -114,7 +114,7 @@ def get_yadisk_url_2(audio, ya_disks):
 
     fold = "!!!" + rand_st(15)
     name = ("%s - %s.mp3" % (audio.artist, audio.title)).replace("/", "|")
-    name = cut(name, 255)
+    name = cut(name, 128)
     path = "disk:/%s/%s" % (fold, name)
     log("path", path)
 
