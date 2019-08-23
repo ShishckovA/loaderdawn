@@ -4,7 +4,6 @@
 Установка:
 ```sh
 pip3 install -r requirements.txt
-mkdir logs
 nano settings.txt
 ```
 
@@ -13,7 +12,7 @@ nano settings.txt
 #В файле settings.txt строчки, начинающиеся с решётки, а также пустые строчки, игнорируются
 
 #api_v
-5.84
+5.101
 
 #Логин вспомогательной страницы 
 my.email@mail.com
