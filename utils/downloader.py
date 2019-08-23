@@ -16,7 +16,7 @@ def download_by_parts(audios, aps, ya_disks):
         audios_part = audios[i : min(i + aps, len(audios))]
         rethreads = []
         for i in range(len(audios_part)):
-            reth = rethread(target=get_yadisk_url_2, args=(audios_part[i], ya_disks), name=audios_part[i].title)
+            reth = rethread(target=get_yadisk_url, args=(audios_part[i], ya_disks), name=audios_part[i].title)
             reth.start()
             rethreads.append(reth)
         while 1:
