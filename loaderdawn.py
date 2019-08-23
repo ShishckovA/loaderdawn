@@ -75,7 +75,7 @@ def send_pl(url, user_id):
     for t in [m.start() for m in re.finditer('id="audio', html_code)]:
         first = html_code.find("_", t)
         end = html_code.find("_", first + 1)
-        pl_audio.append(tuple(map(int, html_code[t+9:end].split("_"))))
+        pl_audio.append(tuple(map(int, html_code[t + 9:end].split("_"))))
     
     n_mus = len(pl_audio)
 
@@ -83,7 +83,7 @@ def send_pl(url, user_id):
     for t in pl_audio:
         d.append({"owner_id" : t[0], "id" : t[1]})
     audios = mgetter.get_vk_audios(d)
-    for audios_part in download_by_parts(audios, 5, ya_disks):
+    for audios_part in download_by_parts(audios, 3, ya_disks):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
 
@@ -149,7 +149,7 @@ def process(user_id, message_id):
             log("All size:", all_size)
             log("Start time", start)
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем сообщении: %d, начинаю создавать ссылки!\n=====================" % len(audios), random_id=rand())
-            for audios_part in download_by_parts(audios, 5, ya_disks):
+            for audios_part in download_by_parts(audios, 3, ya_disks):
                 send_audios(audios_part, user_id)
                 log("Part is done, message sent\n")
 

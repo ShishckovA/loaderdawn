@@ -16,7 +16,7 @@ def download_by_parts(audios, aps, ya_disks):
         audios_part = audios[i : min(i + aps, len(audios))]
         rethreads = []
         for i in range(len(audios_part)):
-            reth = rethread(target=get_yadisk_url, args=(audios_part[i], ya_disks), name=audios_part[i].title)
+            reth = rethread(target=get_yadisk_url2, args=(audios_part[i], ya_disks), name=audios_part[i].title)
             reth.start()
             rethreads.append(reth)
         while 1:
@@ -32,6 +32,7 @@ def download_by_parts(audios, aps, ya_disks):
 
 def get_yadisk_url(audio, ya_disks):
     c_disk = random.choice(ya_disks)
+    print(audio.vkurl)
     ytoken = c_disk["token"]
     disk = c_disk["disk"]
     headers = {
@@ -67,8 +68,8 @@ def get_yadisk_url(audio, ya_disks):
         try:
             if st == "success":
                 break
-        except BaseException:
-            pass
+        except BaseException as e:
+            log(e)
         log("!!Uploading error. Trying again. trys =", trys)
     else:
         log("Max try exceeded")
