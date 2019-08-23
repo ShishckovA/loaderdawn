@@ -84,7 +84,7 @@ def send_pl(url, user_id):
         d.append({"owner_id" : t[0], "id" : t[1]})
     audios = mgetter.get_vk_audios(d)
     if not len(audios):
-        vk.messages.send(random_id=rand(), user_id=user_id, message="Прости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!")
+        vk.messages.send(random_id=rand(), user_id=user_id, message="=====================\nПрости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!\n=====================")
         return False
     for audios_part in download_by_parts(audios, 3, ya_disks):
         send_audios(audios_part, user_id)
