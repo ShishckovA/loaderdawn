@@ -85,9 +85,11 @@ def send_pl(url, user_id):
     audios = mgetter.get_vk_audios(d)
     if not len(audios):
         vk.messages.send(random_id=rand(), user_id=user_id, message="Прости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!")
+        return False
     for audios_part in download_by_parts(audios, 3, ya_disks):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
+    return True
 
 def get_wall_audio_info(message):
     audios = []
@@ -161,9 +163,10 @@ def process(user_id, message_id):
         
         pl_url = get_pl_url(message)
 
+        luck = True
         if pl_url:
             log("Playlist url found: %s Starting sending playlist" % pl_url)
-            send_pl(pl_url, user_id)
+            luck = send_pl(pl_url, user_id)
         else:
             log("No playlist url found")
 
@@ -172,14 +175,15 @@ def process(user_id, message_id):
             vk.messages.send(user_id=user_id, message="=====================\nПришли мне песню или плейлист, и я помогу тебе скачать твою любимую музыку!\n=====================", random_id=rand())
         else:
             time.sleep(0.5)
-            vk.messages.send(user_id=user_id, random_id=rand(), message="=====================\n" +  
-                random.choice([
-                    "Ура, ещё одно успешное скачивание!", 
-                    "Всё получилось!",
-                    "Я справился? Класс!",
-                    "Порекомендуешь меня друзьям?",
-                    ]) + 
-                "\n=====================")
+            if luck:
+                vk.messages.send(user_id=user_id, random_id=rand(), message="=====================\n" +  
+                    random.choice([
+                        "Ура, ещё одно успешное скачивание!", 
+                        "Всё получилось!",
+                        "Я справился? Класс!",
+                        "Порекомендуешь меня друзьям?",
+                        ]) + 
+                    "\n=====================")
         log("End time", time.time())
         log("Time -", time.time() - start)
         log("Answered!\n\n")
