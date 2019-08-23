@@ -71,18 +71,20 @@ def send_pl(url, user_id):
     pl_audio = []
 
     html_code = vk_session.http.get(url).content.decode("utf-8")
-
+    print(html_code)
     for t in [m.start() for m in re.finditer('id="audio', html_code)]:
         first = html_code.find("_", t)
         end = html_code.find("_", first + 1)
         pl_audio.append(tuple(map(int, html_code[t + 9:end].split("_"))))
-    
+        
     n_mus = len(pl_audio)
 
     d = []
     for t in pl_audio:
         d.append({"owner_id" : t[0], "id" : t[1]})
     audios = mgetter.get_vk_audios(d)
+    if not len(audios):
+        vk.messages.send(random_id=rand(), user_id=user_id, message="Прости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!")
     for audios_part in download_by_parts(audios, 3, ya_disks):
         send_audios(audios_part, user_id)
         log("Part is done, message sent\n")
