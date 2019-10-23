@@ -67,7 +67,7 @@ class MesGetter:
         message = self.session_user.post("https://vk.com/dev", data=d).content
         decoded_message = message.decode("cp1251")
         pos_resp = decoded_message.find('{"response"')
-        decoded_message = decoded_message[pos_resp:]
+        decoded_message = json.loads(decoded_message[4:])["payload"][1][0]
         result = json.loads(decoded_message)["response"]["items"][0]
         return result
 

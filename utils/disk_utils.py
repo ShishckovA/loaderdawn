@@ -35,9 +35,10 @@ def check_disks(token_list):
                 log("Username -", info["user"]["login"])
                 if info["total_space"] - info["used_space"] > 30 * 2 ** 20: # 30 mb
                     ya_disks.append({
-                        "disk"     : c_disk, 
-                        "token"    : t, 
-                        "username" : info["user"]["login"]
+                        "disk"      : c_disk, 
+                        "token"     : t, 
+                        "username"  : info["user"]["login"],
+                        "freeSpace" : info["total_space"] - info["used_space"] 
                         })
         except BaseException as e:
             log(e)  
