@@ -67,11 +67,10 @@ def get_pl_url(message):
                 return t
     return False
 
-def send_pl(url, user_id):
+def get_pl_audio(url):
     pl_audio = []
 
     html_code = vk_session.http.get(url).content.decode("utf-8")
-    print(html_code)
     for t in [m.start() for m in re.finditer('id="audio', html_code)]:
         first = html_code.find("_", t)
         end = html_code.find("_", first + 1)
@@ -83,13 +82,7 @@ def send_pl(url, user_id):
     for t in pl_audio:
         d.append({"owner_id" : t[0], "id" : t[1]})
     audios = mgetter.get_vk_audios(d)
-    if not len(audios):
-        vk.messages.send(random_id=rand(), user_id=user_id, message="=====================\nПрости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!\n=====================")
-        return False
-    for audios_part in download_by_parts(audios, 3, ya_disks):
-        send_audios(audios_part, user_id)
-        log("Part is done, message sent\n")
-    return True
+    return audios
 
 def get_wall_audio_info(message):
     audios = []
@@ -166,7 +159,15 @@ def process(user_id, message_id):
         luck = True
         if pl_url:
             log("Playlist url found: %s Starting sending playlist" % pl_url)
-            luck = send_pl(pl_url, user_id)
+            audios = get_pl_audio(pl_url)
+            vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем плейлисте: %d, начинаю создавать ссылки!\n=====================" % len(audios), random_id=rand())
+            sent = False
+            for audios_part in download_by_parts(audios, 3, ya_disks):
+                sent = True
+                send_audios(audios_part, user_id)
+                log("Part is done, message sent\n")
+            if not sent:
+                vk.messages.send(random_id=rand(), user_id=user_id, message="=====================\nПрости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!\n=====================")
         else:
             log("No playlist url found")
 
