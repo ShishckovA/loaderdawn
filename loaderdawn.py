@@ -160,14 +160,15 @@ def process(user_id, message_id):
         if pl_url:
             log("Playlist url found: %s Starting sending playlist" % pl_url)
             audios = get_pl_audio(pl_url)
+            if not audios:
+                vk.messages.send(random_id=rand(), user_id=user_id, message="=====================\nПрости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!\n=====================")
+                return
             vk.messages.send(user_id=user_id, message="=====================\nАудиозаписей найдено в вашем плейлисте: %d, начинаю создавать ссылки!\n=====================" % len(audios), random_id=rand())
             sent = False
             for audios_part in download_by_parts(audios, 3, ya_disks):
                 sent = True
                 send_audios(audios_part, user_id)
                 log("Part is done, message sent\n")
-            if not sent:
-                vk.messages.send(random_id=rand(), user_id=user_id, message="=====================\nПрости, я не умею работать с закрытыми плейлистами :(\nПожалуйста, открой его хотя бы на пять минуток или пришли песни сообещнием!\n=====================")
         else:
             log("No playlist url found")
 
