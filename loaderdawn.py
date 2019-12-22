@@ -71,11 +71,11 @@ def get_pl_audio(url):
     pl_audio = []
 
     html_code = vk_session.http.get(url).content.decode("utf-8")
-    for t in [m.start() for m in re.finditer('id="audio', html_code)]:
-        first = html_code.find("_", t)
-        end = html_code.find("_", first + 1)
-        pl_audio.append(tuple(map(int, html_code[t + 9:end].split("_"))))
-        
+    for t in [m.start() for m in re.finditer('audio_item_', html_code)]:
+        first = html_code.find("_", t + 11)
+        end = html_code.find(" ", first + 1)
+        pl_audio.append(tuple(map(int, html_code[t + 11:end].split("_"))))
+    
     n_mus = len(pl_audio)
 
     d = []
@@ -125,8 +125,8 @@ def process(user_id, message_id):
                 nourl.append(elem)
 
         log("Infos:", infos)
-        log("\nWith url:", withurl)
-        log("\nNo url:", nourl)
+        log("With url:", withurl)
+        log("No url:", nourl)
 
         audios = []
         for elem in withurl:
@@ -155,7 +155,7 @@ def process(user_id, message_id):
         log("Searching playlist url")
         
         pl_url = get_pl_url(message)
-
+        log(pl_url)
         luck = True
         if pl_url:
             log("Playlist url found: %s Starting sending playlist" % pl_url)
