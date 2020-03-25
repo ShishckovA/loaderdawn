@@ -88,17 +88,31 @@ def get_wall_audio_info(message):
     audios = []
     for bigat in message["attachments"]:
         if bigat["type"] == "wall":
-            for t in bigat["wall"]["attachments"]:
-                if t["type"] == "audio":
-                    audio = {
-                              "id" : t["audio"]["id"],
-                        "owner_id" : t["audio"]["owner_id"],
-                          "artist" : t["audio"]["artist"],
-                           "title" : t["audio"]["title"]
-                    }
-                    if "access_token" in t["audio"]:
-                        audio["access_token"] = t["audio"]["access_token"]
-                    audios.append(audio)
+            if "copy_history" in bigat["wall"]:
+                for copy_history in bigat["wall"]["copy_ihstory"]:
+                    for t in copy_history["attachments"]:
+                        if t["type"] == "audio":
+                            audio = {
+                                      "id" : t["audio"]["id"],
+                                "owner_id" : t["audio"]["owner_id"],
+                                  "artist" : t["audio"]["artist"],
+                                   "title" : t["audio"]["title"]
+                            }
+                            if "access_token" in t["audio"]:
+                                audio["access_token"] = t["audio"]["access_token"]
+                            audios.append(audio)
+            else:
+                for t in bigat["wall"]["attachments"]:
+                    if t["type"] == "audio":
+                        audio = {
+                                  "id" : t["audio"]["id"],
+                            "owner_id" : t["audio"]["owner_id"],
+                              "artist" : t["audio"]["artist"],
+                               "title" : t["audio"]["title"]
+                        }
+                        if "access_token" in t["audio"]:
+                            audio["access_token"] = t["audio"]["access_token"]
+                        audios.append(audio)
 
     if "fwd_messages" in message:
         for fwd_mes in message["fwd_messages"]:
