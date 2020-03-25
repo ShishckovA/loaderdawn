@@ -89,7 +89,7 @@ def get_wall_audio_info(message):
     for bigat in message["attachments"]:
         if bigat["type"] == "wall":
             if "copy_history" in bigat["wall"]:
-                for copy_history in bigat["wall"]["copy_ihstory"]:
+                for copy_history in bigat["wall"]["copy_history"]:
                     for t in copy_history["attachments"]:
                         if t["type"] == "audio":
                             audio = {
