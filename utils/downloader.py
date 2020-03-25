@@ -123,8 +123,8 @@ def get_yadisk_url_2(audio, ya_disks):
     mkd = disk.mkdir(fold)["href"]
     log("mkdir req href:", mkd)
 
-    os.mkdir(fold)
-    wget.download(audio.vkurl, "./%s/%s" % (fold, name))
+    os.mkdir(fold)  
+    os.system("wget -q -O \"./%s/%s\" %s" % (fold, name, audio.vkurl))
     log("Downloaded!")
 
     disk.upload("./%s/%s" % (fold, name), path)
