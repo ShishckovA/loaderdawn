@@ -121,6 +121,8 @@ def get_wall_audio_info(message):
 
 def process(user_id, message_id):
     try:
+        vk.messages.send(user_id=user_id, message="Бот не работает.", random_id=rand())
+        return
         log("New message: m_id = %d" % message_id)
         log("Read, typing")
 
